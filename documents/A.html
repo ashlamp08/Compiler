@@ -1,0 +1,186 @@
+
+<!-- saved from url=(0050)http://athena.nitc.ac.in/kmurali/Compiler/sim.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="Generator" content="Microsoft Word 97">
+<title>A</title>
+<style type="text/css"></style></head>
+<body link="#0000ff" vlink="#800080">
+
+<b><p align="CENTER">COMPILER DESIGN LABORATORY</p>
+</b><p align="CENTER">TARGET MACHINE ARCHITECTURE</p>
+<b><p align="JUSTIFY">Brief description of the machine Architecture</p>
+</b><p align="JUSTIFY">	SIM or <b><i>Simple Integer Machine</i></b> is a hypothetical machine with an elementary instruction set that supports integer arithmetic. The machine has eight <b>General Purpose</b> <b>Registers R<sub>0</sub>..R<sub>7</sub></b>, each of which can hold an integer. The <b>Memory words</b> are numbered 0,1,2… and each one can hold an integer. The arithmetic operations supported by the ALU are addition, multiplication, subtraction, division and modulo operation on integers. The logical operations support comparison between values in two registers. The branching instructions allow control transfer based on the result of a comparison. Each instruction in the instruction set of SIM fits into one memory word. The machine has three special registers – <b>Stack Pointer (SP)</b>, <b>Base Pointer (BP)</b> and <b>Instruction Pointer (IP)</b>. The stack pointer is generally used to point to the last element of the stack and is normally initialised immediately below the global data of the program. When data is pushed on to the stack (using the push instruction) the stack pointer gets automatically <i>incremented</i>. Thus, the stack grows towards higher memory locations. The instruction pointer carries the address of the current instruction under execution and is automatically incremented to point to the next instruction to be executed after the completion of the current instruction. The base pointer is generally used to store the base address of an activation record for procedure evocations. Although any other register can act as the base pointer, availability of an explicit base pointer gives better structure and clarity to the run-time environment generation phase of program compilation.</p>
+<b><p align="JUSTIFY">SIM INSTRUCTION SET</p>
+</b><p align="JUSTIFY">	SIM has eight instruction classes. All SIM arithmetic and logical instructions act on <b>integer operands only</b>.</p>
+<ol>
+
+<p align="JUSTIFY"></p><li>Data transfer 	: MOV </li><p></p>
+<p align="JUSTIFY"></p><li>Arithmetic 	: ADD, SUB, MUL, DIV, MOD, INR, DCR</li><p></p>
+<p align="JUSTIFY"></p><li>Logical 	: LT, GT, EQ, NE, GE, LE</li><p></p>
+<p align="JUSTIFY"></p><li>Branching		: JZ, JNZ, JMP</li><p></p>
+<p align="JUSTIFY"></p><li>Stack 		: PUSH, POP</li><p></p>
+<p align="JUSTIFY"></p><li>Subroutine		: CALL, RET</li><p></p>
+<p align="JUSTIFY"></p><li>Input/Output		: IN, OUT</li><p></p>
+<p align="JUSTIFY"></p><li>Start/Halt		: START,HALT</li><p></p></ol>
+
+<b><p align="JUSTIFY">&nbsp;</p>
+<font size="4"><p align="JUSTIFY">Instruction Syntax and Semantics</p>
+</font><p align="JUSTIFY">Comments</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">Comments are specified after "//" following an instruction on the same line. </p>
+<p align="JUSTIFY">Example: MOV R0, R1 // This is a comment. </p></dir>
+</dir>
+
+<b><p align="JUSTIFY">Data Transfer </p>
+<i></i><p><i>Immediate Addressing</i>: </p></b><dir><b>
+</b><dir><b>
+
+</b><p>MOV Ri, NUM // The value NUM is transferred to the register Ri.</p>
+<p align="JUSTIFY">Example: MOV R0, -9 // Register R0 now contains –9</p></dir>
+</dir>
+
+<b><i></i><p align="JUSTIFY"><i>Register Addressing</i>: </p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">MOV Ri, Rj<sub> </sub>// Copy contents of Rj to Ri</p>
+<p align="JUSTIFY">Example: <br><br> MOV R0, -9</p>
+<p align="JUSTIFY">MOV R1, 8</p>
+<p align="JUSTIFY">MOV R0, R1 //R0 now contains 8</p></dir>
+</dir>
+
+<b><i></i><p align="JUSTIFY"><i>Register Indirect Addressing</i>: </p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">MOV Ri, [Rj] // Copy contents of memory location pointed by Rj to Ri </p>
+<p align="JUSTIFY">MOV [Ri], Rj // Contents of Rj are copied to the location whose address is in Ri</p>
+<p align="JUSTIFY">Example: Let the memory location 1005 have value 1237.</p>
+<p align="JUSTIFY">MOV R0, 1005</p>
+<p align="JUSTIFY">MOV R1, [R0] // Now R1 contains 1237</p></dir>
+</dir>
+
+<b><i></i><p align="JUSTIFY"><i>Direct Addressing</i>: </p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">MOV [LOC], Rj // Contents of Rj are transferred to the address LOC </p>
+<p align="JUSTIFY">MOV Rj, [LOC] // Contents of the memory location LOC are transferred to Rj</p>
+<p align="JUSTIFY">Example: Let the memory location 1005 have value 1237</p>
+<p align="JUSTIFY">MOV R0, [1005] // Now R0 has value 1237.</p></dir>
+</dir>
+
+<p align="JUSTIFY">Note: Ri, Rj can be SP or BP along with other registers. <i>No instruction can take IP as an argument.</i></p><i>
+</i><b><p align="JUSTIFY">Arithmetic </p>
+</b><p align="JUSTIFY">ADD, SUB, MUL, DIV and MOD have the following general format. </p><dir>
+<dir>
+
+<p align="JUSTIFY">OP Ri, Rj // The result of Ri op Rj is stored in Ri</p></dir>
+</dir>
+
+<p align="JUSTIFY">INR and DCR are used to increment/decrement the value of a register by one. </p><dir>
+<dir>
+
+<p align="JUSTIFY">INR Rj // Similar syntax for DCR</p></dir>
+</dir>
+
+<p align="JUSTIFY">Here Ri, Rj may be any registers except SP, BP and IP.</p>
+<p align="JUSTIFY">Example: </p><dir>
+<dir>
+
+<p align="JUSTIFY">MOV R0, 3</p>
+<p align="JUSTIFY">MOV R1, 5</p>
+<p align="JUSTIFY">MOD R1, R0 // Now R1 stores value 2 </p></dir>
+</dir>
+
+<b><p align="JUSTIFY">Logical</p>
+</b><p align="JUSTIFY">For all logical operators the operands may be any two registers except SP, BP and IP.</p>
+<ol type="a">
+
+<p align="JUSTIFY"></p><li>LT Ri, Rj // Stores 1 in Ri if the value stored in Ri is less than that in Rj. Ri is set to 0 otherwise.</li><p></p>
+<p align="JUSTIFY"></p><li>GT Ri, Rj // Stores 1 in Ri if the value stored in Ri is greater than that in Rj. Ri set to 0 otherwise.</li><p></p>
+<p align="JUSTIFY"></p><li>EQ Ri, Rj // Stores 1 in Ri if the value stored in Ri is equal to that in Rj. Set to 0 otherwise.</li><p></p>
+<p align="JUSTIFY"></p><li>NE Ri, Rj // Stores 1 in Ri if the value stored in Ri is not equal to that in Rj. Set to 0 otherwise.</li><p></p>
+<p align="JUSTIFY"></p><li>GE Ri, Rj // Stores 1 in Ri if the value stored in Ri is greater than or equal to that in Rj. Set to 0 otherwise.</li><p></p>
+<p align="JUSTIFY"></p><li>LE Ri, Rj // Stores 1 in Ri if the value stored in Ri is less than or equal to that in Rj. Set to 0 otherwise.</li><p></p></ol>
+
+<b><p align="JUSTIFY">Branching </p>
+</b><p align="JUSTIFY">Branching is achieved by changing the value of the IP to the address of a specified LABEL. However, this is an implicit process and transparent to the programmer. </p><dir>
+
+<p align="JUSTIFY">a) JZ Ri, LABEL // Jumps to LABEL if the contents of Ri is zero. </p>
+<p align="JUSTIFY">b)JNZ Ri, LABEL // Jumps to LABEL if the contents of Ri is not zero. </p>
+<p align="JUSTIFY">c) JMP LABEL // Unconditional Jump to instruction specified at LABEL</p></dir>
+
+<p align="JUSTIFY">Here Ri can be any register except SP, BP and IP.</p>
+<p align="JUSTIFY">Example: 	</p><dir>
+<dir>
+
+<p align="JUSTIFY">MOV R0, 4</p>
+<p align="JUSTIFY">MOV R1, 5</p>
+<p align="JUSTIFY">L1:NE R0, R1 // If R0 and R1 contain different values, set R0 to 1, else set R0 to 0.</p>
+<p align="JUSTIFY">JZ R0, L2 // If R0 is 0, jump to Label L2</p>
+<p align="JUSTIFY">MOV R2, 1</p>
+<p align="JUSTIFY">ADD R0, R2 // This increments the value of R0 by 1</p>
+<p align="JUSTIFY">JMP L1 // Unconditional jump to Label L1</p>
+<p align="JUSTIFY">L2: OUT R0 // This outputs the value of R0. (See discussion that follows).</p>
+<p align="JUSTIFY">&nbsp;</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">Stack</p>
+</b><p align="JUSTIFY">SP is normally set to the address of the last element of the stack. It is the programmer’s responsibility to suitably initialise SP. Stack has to be allocated in the memory of SIM. </p><dir>
+
+<p align="JUSTIFY">a) PUSH Ri // Increment SP by 1and copy contents of Ri to the location pointed to by SP.</p>
+<p align="JUSTIFY">b) POP Ri // Copy contents of the location pointed to by SP into Ri and decrement SP by 1.</p></dir>
+
+<p align="JUSTIFY">For both these instructions Ri may be any register except IP.	</p>
+<p align="JUSTIFY">Example:	</p><dir>
+<dir>
+
+<p align="JUSTIFY">MOV SP, 1000 // Initialise SP to 1000	</p>
+<p align="JUSTIFY">MOV R0, 7 </p>
+<p align="JUSTIFY">PUSH R0 // Now the memory location 1001 contains value 7. SP takes value 1001</p>
+<p align="JUSTIFY">POP BP // Now BP contains value 7. SP has value 1000.</p>
+<p align="JUSTIFY">&nbsp;</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">Subroutine</p>
+</b><p align="JUSTIFY">The CALL instruction copies the address of the next instruction to be fetched (IP + 1) on to the stack, and transfers control to the label specified. The RET instruction restores the IP value stored in the stack and continues execution fetching the next instruction pointed to by IP. The subroutine instructions provide a neat mechanism for procedure evocations. </p>
+<ol type="a">
+
+<p align="JUSTIFY"></p><li>CALL LABEL // Increment SP by 1, transfers IP+1 to location pointed to by SP and jumps to LABEL</li><p></p>
+<p align="JUSTIFY"></p><li>RET // Sets IP to the value pointed to by SP and decrements SP. </li><p></p></ol>
+
+<p align="JUSTIFY">Example: 	</p><dir>
+<dir>
+
+<p align="JUSTIFY">MOV SP, 2000 // SP is initialised</p>
+<p align="JUSTIFY">MOV R0, 3 </p>
+<p align="JUSTIFY">CALL L1 // SP takes value 2001 and the address of L2 is stored in that location</p>
+<p align="JUSTIFY">L2:       HLT	// Machine halts (See discussion below).</p>
+<p align="JUSTIFY">L1:      MOV R0, 00</p>
+<p align="JUSTIFY">RET // The stack top is transferred to IP, SP is decrement to 2000.</p></dir>
+</dir>
+
+<p align="JUSTIFY">&nbsp;</p>
+<b><p align="JUSTIFY">Input/Output</p>
+</b><ol type="a"><b>
+
+</b><p align="JUSTIFY"></p><li>IN Ri // Transfers the contents of the standard input to Ri</li><p></p>
+<p align="JUSTIFY"></p><li>OUT Ri // Transfers the contents of Ri to the standard output</li><p></p></ol>
+
+<p align="JUSTIFY">Ri can be any register except IP, BP and SP.</p>
+<p align="JUSTIFY">Example:	</p><dir>
+<dir>
+
+<p align="JUSTIFY">MOV R0, 6</p>
+<p align="JUSTIFY">OUT R0 // 6 is printed by the standard output</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">Start/Halt.</p>
+</b><p align="JUSTIFY"><b>	</b>START // IP will be initialised to this instruction automatically when a program is taken for execution and </p>
+<p align="JUSTIFY">//execution starts from the next instruction after START</p>
+<b></b><p align="JUSTIFY"><b>	</b>HALT // This instruction halts the machine.</p>
+<p align="JUSTIFY">&nbsp;</p>
+<p align="JUSTIFY">Please send Error reports/Comments/Queries about this document to <a href="mailto:kmurali@nitc.ac.in">kmurali@nitc.ac.in</a></p>
+<p align="JUSTIFY"></p>
+
+</body></html>

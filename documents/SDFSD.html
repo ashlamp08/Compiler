@@ -1,0 +1,298 @@
+
+<!-- saved from url=(0050)http://athena.nitc.ac.in/kmurali/Compiler/sil.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="Generator" content="Microsoft Word 97">
+<title>SDFSD</title>
+<style type="text/css"></style></head>
+<body link="#0000ff" vlink="#800080">
+
+<b><p align="CENTER">&nbsp;</p>
+<p align="CENTER">&nbsp;</p>
+<p align="CENTER">COMPILER DESIGN LABORATORY</p>
+<p align="CENTER">SOURCE LANGUAGE DESCRIPTION</p>
+</b>
+
+<b><p align="JUSTIFY">1. Simple Integer Language (SIL)</p>
+</b><p align="JUSTIFY">	The language specification given here is informal and gives a lot of flexibility for the designer to write the grammatical specifications to his/her own taste. The following features are the minimal requirements for the language. </p>
+<b><p align="JUSTIFY">2. General Program Structure</p>
+</b><p align="JUSTIFY">	Global Declarations</p>
+<p align="JUSTIFY">	Function Definitions </p>
+<p align="JUSTIFY">	Main Function Definition</p>
+<b><p align="JUSTIFY">3. Global Declarations</p>
+</b><p align="JUSTIFY">The global declaration part of a SIL program begins with the keyword <b>decl </b>and ends with the keyword <b>enddecl</b>. Declarations should be made for global variables and functions defined in the SIL program. </p>
+<p align="JUSTIFY">	Global variables may be of type <i>Integer, Boolean, Integer array </i>or<i> Boolean array</i>. The variables declared globally must be allocated statically. Boolean variables can hold only the special Boolean constants – <b>TRUE/FALSE</b>. Global variables are visible throughout the program <b>unless suppressed</b> by a redeclaration within the scope of some function. Array type variables can be declared only globally. Only single dimensional arrays are allowed. Variables <b>cannot</b> be assigned values during the declaration phase.</p>
+<p align="JUSTIFY">	For every function except the <b><i>main</i></b> function defined in a SIL program, there must be a declaration. A function declaration should specify the name of the function, the name and type of each of its arguments and the return type of the function. A function can have integer/boolean arguments. Parameters may be passed by<b> value </b>or <b>reference</b>. Arrays <b>cannot </b>be passed as arguments. If a global variable name appears as an argument, then within the scope of the function, the new declaration will be valid and global variable declaration is <b>suppressed</b>. Different functions may have arguments of the same name. However, the same name cannot be given to different arguments in a function. The return type of a function must be either integer or Boolean. The general form of declarations is as follows:</p>
+<p align="JUSTIFY">Type VarName/FunctionName [ArraySize]/(ParameterList); //Third part needed only for arrays/functions </p>
+<i></i><p align="JUSTIFY"><i>Example</i>:<br><br> <b>decl</b></p><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>integer x,y,a[10],b[20];</b>	 	 // x,y are integers, a,b are integer arrays</p>
+<b></b><p align="JUSTIFY"><b> integer f1(integer a1,a2; boolean b1; integer &amp;c1), f2();</b> // c1 is passed by <i>reference</i>, rest by <i>value</i></p><i>
+</i><b></b><p align="JUSTIFY"><b>boolean t, q[10], f3(integer x); </b>// variable, array and a functions declared together</p>
+<b></b><p align="JUSTIFY"><b>integer swap(integer &amp;x, &amp;y);	 </b>// x, y are passed by reference</p></dir>
+</dir>
+
+<b></b><p align="JUSTIFY"><b>enddecl			 // </b>Please note the use of "<b>,</b>" and "<b>;</b>"</p>
+<p align="JUSTIFY">Declaring functions at the beginning avoids the "forward reference" problem and facilitates simpler single pass compilation. Note that the declaration syntax of functions is structurally same as that for variables. Finally, inside <b>swap</b>, the global variables <b>x</b> and<b> y</b> are no more visible because of the re-declaration and global declaration for <b>x</b> is suppressed in <b>f3</b>. If a variable/function is declared twice at the same point, a compilation error should result. </p>
+<b><p align="JUSTIFY">4. Function Structure and Local Variables</p>
+</b><p align="JUSTIFY">	All globally declared variables are visible inside a function, unless suppressed by a re-declaration. Variables declared inside a function are <b>invisible</b> outside. The general form of a function definition is given below:</p>
+<p align="JUSTIFY">&lt;Type&gt; FunctionName(ArgumentList) {</p><dir>
+<dir>
+
+<p align="JUSTIFY">Local Declarations</p>
+<p align="JUSTIFY">Function Body</p></dir>
+</dir>
+
+<p align="JUSTIFY">}</p>
+<p align="JUSTIFY">	The arguments and return type of each function definition should match exactly with the corresponding declaration. Argument names must be type checked for <b>name equivalence</b> against the declaration. <i>Every declared function must have a definition</i>. The compiler should report error otherwise.</p>
+<p align="JUSTIFY">	The syntax of local declarations and definitions are similar to those of global declarations <b><i>except that arrays and functions cannot be</i> <i>declared inside a function</i></b>. Local variables are visible only within the scope of the function where they are declared. Scope rules for parameters are identical to those for variables. </p>
+<p align="JUSTIFY">	The <b>main()</b> function, by specification, must be a <b>zero argument</b> function of type <b>integer</b>. <i>Program execution begins from the body of the main function.</i> The main function <i>need not</i> be declared. The definition part of main should be given in the same format as any other function. </p>
+<p align="JUSTIFY">The <b>Body</b> of a function is a collection of statements embedded within the keywords <b>begin</b> and <b>end. </b></p><b>
+</b><p align="JUSTIFY">Example: The definition of <b>swap</b> declared above may look like the following:</p>
+<b></b><p align="JUSTIFY"><b>integer </b>swap <b>(integer </b>&amp;x, &amp;y<b>) {</b></p><b>
+<p align="JUSTIFY">decl </p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>integer </b>q<b> // </b>q is re-declared causing suppression of global declaration</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">enddecl</p>
+<p align="JUSTIFY">begin </p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">q = x; </p>
+<p align="JUSTIFY">x = y;</p>
+<p align="JUSTIFY">y = q; // Note the syntax for using variables passed by reference. </p>
+<p align="JUSTIFY">return 1; // swap must return an integer. </p></dir>
+</dir>
+
+<b></b><p align="JUSTIFY"><b>end		 // </b>Note that SIL doesn’t support void functions. </p>
+<b><p align="JUSTIFY"> }</p>
+</b><p align="JUSTIFY"><b>	</b>Local Variables and parameters should be allocated space in the <b>run-time stack</b>. The language supports recursion and <b>static scope rules apply</b>.</p>
+<b><p align="JUSTIFY">5. Main and Function Body</p>
+</b><p align="JUSTIFY">	A Body is a collection of <b>statements</b> embedded within the keywords <b>begin</b> and <b>end.</b> Each statement should end with a ‘;’ which is called the <b>terminator</b>. There are five types of statements in SIL. They are:</p>
+<ol type="a">
+<ol type="a">
+
+<p align="JUSTIFY"></p><li>Assignment Statement 		b) Conditional Statement</li><p></p></ol>
+</ol>
+
+<ol type="a">
+<ol type="a">
+
+<p align="JUSTIFY"></p><li>Iterative statement			d) Return statement 		e) Input/Output </li><p></p></ol>
+</ol>
+
+<p align="JUSTIFY">Before taking up statements, we should look at the different kinds of <b>expressions</b> supported by SIL.</p>
+<b><p align="JUSTIFY">6. Expressions</p>
+</b><p align="JUSTIFY">	SIL has two kinds of expressions, a) Arithmetic and b) Logical</p>
+<b><p align="JUSTIFY">6.1 Arithmetic Expressions</p>
+</b><p align="JUSTIFY">Any constant, integer variable or an indexed array variable is a SIL expression provided the expression is within the scope of the concerned variable declarations. SIL treats a function as an expression and the value of a function is its return value. SIL supports <b>recursion</b>. </p>
+<b></b><p align="JUSTIFY"><b>	</b>SIL provides five arithmetic operators, viz., +, -, *, / (Integer Division) and % (Modulo operator) through which arithmetic expressions may be combined. Expression syntax and semantics are similar to standard practice in programming languages and normal rules of precedence, associativity and paranthesization hold. SIL is strongly typed and <b><i>any type mismatch must be reported at compile time</i></b>. </p>
+<p align="JUSTIFY">Examples: 5, a[a[5+x]]+x , (f2() + b[x] + 5) etc. are arithmetic expressions. </p>
+<b><p align="JUSTIFY">6.2 Logical Expressions</p>
+</b><p align="JUSTIFY">	Logical expressions can take values TRUE or FALSE. Logical expressions may be formed by combining arithmetic expressions using <b>relational operators</b>. The relational operators supported by SIL are &lt;, &gt;, &lt;=, &gt;=, ==, and !=. Again standard syntax and semantics conventions apply. TRUE and FALSE are constant logical expressions. Every boolean variable is a logical expression and its value is the value stored in its location. Logical expressions themselves may be combined using <b>logical operators</b> AND, OR and NOT. Logical expressions may be assigned to boolean variables only. Note that a relational operator can compare only two arithmetic expressions and not two logical expressions. Similarly, a logical operator can connect only two logical expressions (except for NOT which is a unary logical operator).</p>
+<p align="JUSTIFY">Example:((x==y)==a[3]) is <b>not valid</b> SIL expression because (x==y) is a logical expression, while a[3] is an arithmetic expression and "==" operates only between two arithmetic expressions.</p>
+<p align="JUSTIFY">	</p>
+<b><p align="JUSTIFY">7. Assignment Statement</p>
+</b><p align="JUSTIFY"><b>	</b>The SIL assignment statement assigns the value of an expression to a variable, or an indexed array of the <b>same type</b>. Type errors must be reported at compile time. The general syntax is as the following: </p>
+<p align="JUSTIFY">	&lt;<b>Variable</b>&gt; = &lt;<b>Expression</b>&gt;;</p>
+<p align="JUSTIFY">Example: q[3]=(x==y); t=TRUE; are both valid assignments to boolean variables.</p>
+<b><p align="JUSTIFY">8. Conditional Statement </p>
+</b><p align="JUSTIFY"><b>	</b>The SIL conditional statement has the following syntax:</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>if &lt;</b>Logical Expression<b>&gt; then </b></p><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">Statements</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">else		 		</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">Statements</p></dir>
+</dir>
+
+<b></b><p align="JUSTIFY"><b>endif;	</b>	</p></dir>
+</dir>
+
+<p align="JUSTIFY">The <b>else</b> part is optional. The statements inside an <b>if-</b>block may be conditional, iterative, assignment, or input/output statements, but <b>not</b> the return statement.</p>
+<b><p align="JUSTIFY">9. Iterative Statement</p>
+</b><p align="JUSTIFY">	The SIL iterative statement has the following syntax:</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>while &lt; </b>Logical Expression<b> &gt; do</b></p><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">Statements</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">endwhile;</p></b></dir><b>
+</b></dir><b>
+
+</b><p align="JUSTIFY">	Standard conventions apply in this case too. The statements inside a <b>while-</b>block may be conditional, iterative, assignment, or input/output statements, but <b>not</b> the return statement.</p>
+<b><p align="JUSTIFY">10. Return Statement</p>
+</b><p align="JUSTIFY">	The main body as well as each function body should have <b>exactly one</b> return statement and it should be the <b>last statement</b> in the body. The syntax is:</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>return &lt;</b>Expression<b>&gt; ;</b></p></dir><b>
+</b></dir><b>
+
+</b><p align="JUSTIFY">	The return value of the function is the value of the expression. The return type should match the type of the expression. Otherwise, a compilation error should occur. </p>
+<p align="JUSTIFY">	The <b>return type of main is integer </b>by specification.</p>
+<b><p align="JUSTIFY">11. Input/Output</p>
+</b><p align="JUSTIFY"><b>	</b>SIL has two I/O statements – <b>read </b>and <b>write</b>. The syntax is as the following:</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>read (&lt;</b>IntegerVariable<b>&gt;);</b></p></dir><b>
+</b></dir><b>
+
+</b><p align="JUSTIFY"><b>write (&lt;</b>Arithmetic Expression<b>&gt;);</b></p><b>
+</b><p align="JUSTIFY">	The <i>read</i> statement reads an integer value from the standard input device into an integer variable or an indexed array variable. The <i>write</i> statement outputs the value of the arithmetic expression into the standard output. Note that <i>input/output operations are not allowed on boolean type</i>. </p><dir>
+<dir>
+
+<p align="JUSTIFY">Example: <b>read (a [x]);	</b></p><dir><b>
+<dir>
+
+<p align="JUSTIFY">write (7*(5+a[9]);</p></dir>
+</b></dir><b>
+</b></dir><b>
+</b></dir><b>
+
+</b><p align="JUSTIFY">	</p>
+<b><p align="JUSTIFY">12. An Example SIL Program</p>
+</b><p align="JUSTIFY">	The following SIL program calculates and prints out the factorial of the first <b><i>n</i></b> numbers, value of <b><i>n</i></b> read from standard input.</p>
+<b><p align="JUSTIFY">decl</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>integer </b>factorial<b>(</b>integer<b> n);</b></p></dir><b>
+</b></dir><b>
+
+<p>enddecl</p>
+</b><p><b>integer</b> factorial (<b>integer</b> n) {</p>
+<b><p>decl</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>integer</b> rvalue;</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">enddecl</p>
+<p align="JUSTIFY">begin</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>if </b>(n==1) <b>then</b> </p><dir>
+<dir>
+
+<p align="JUSTIFY">rvalue = 1;</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">else</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY">rvalue = n * factorial (n-1);</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">endif;	</p>
+</b><p align="JUSTIFY"><b>return </b>rvalue;		// Note only one RETURN statement is allowed.</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">end</p>
+</b><p align="JUSTIFY">}	</p>
+<b></b><p align="JUSTIFY"><b>integer </b>main( ){ 				// Main definition should always begin like this</p>
+<b><p align="JUSTIFY">decl	</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>integer</b> n,i ;</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">enddecl</p>
+<p align="JUSTIFY">begin</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>read </b>(n);</p>
+<p align="JUSTIFY">i = 1;</p>
+<b></b><p align="JUSTIFY"><b>while</b> ( i &lt;= n) do</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>write</b> ( factorial(i));</p>
+<p align="JUSTIFY">i = i + 1;		</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">endwhile;</p>
+</b><p align="JUSTIFY"><b>return </b>1;		// Any integer value may be returned</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">end</p>
+</b><p align="JUSTIFY">}</p>
+<b><p align="JUSTIFY">ESIL: Extended SIL</p>
+</b><p align="JUSTIFY">There are three important extensions to the language features that must be considered. Some implementation issues are also discussed. This part of the documentation is better read after implementing SIL compiler. </p>
+<p align="JUSTIFY">a) <b>Introducing nested functions:</b> This means provision to declare and define functions inside functions. The scope rules for functions are similar to those for variables. <b>Function parameters</b> also must be supported (This makes the language similar to PASCAL in block structure). Nested functions would require the use of <b>static links</b> to be stored in the activation record of a function. Moreover, the <i>symbol table structure must carry the nesting information</i>. The simplest implementation would be to have one symbol table for each layer of nesting during compilation of a function. Unlike SIL, where there are only two layers of nesting (global and local), <b>the number of layers of nesting in a ESIL program can be determined only during compilation. </b>Note that <b>static scope</b> rules apply.</p>
+<p align="JUSTIFY">b) <b>Providing User defined types</b>: User defined types may be supported by allowing creation of compound data types from simple or already defined data types using the <b>typedef</b> statement. All type definitions should be given <b>before</b> global declarations. The syntax is as follows:</p>
+<b></b><p align="JUSTIFY"><b>typedef</b> <i>name1</i>{</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>integer</b> x; </p>
+<b></b><p align="JUSTIFY"><b>boolean</b> y; </p></dir>
+</dir>
+
+<p align="JUSTIFY">}</p>
+<p align="JUSTIFY">The member <b>fields</b> of a newly defined type may be of type <b>integer</b>, <b>boolean</b> or a <b>previously defined type</b>. Arrays are <b>not</b> allowed </p>
+<b></b><p align="JUSTIFY"><b>typedef</b> <i>name2</i> {</p><dir>
+<dir>
+
+<b></b><p align="JUSTIFY"><b>name1</b> g;</p>
+<b></b><p align="JUSTIFY"><b>boolean </b>t; </p></dir>
+</dir>
+
+<p align="JUSTIFY">}</p>
+<p align="JUSTIFY">Once a type is defined, variables of the type may be defined in the usual manner. The type declaration is visible throughout the program. </p>
+<b><p align="JUSTIFY">decl </p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"><b>name2</b> w[10], u;</p>
+<b></b><p align="JUSTIFY"><b>integer</b> temp;</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">enddecl</p>
+</b><p align="JUSTIFY">The following statement illustrates the access to a variable of a user-defined type.</p><dir>
+<dir>
+
+<p align="JUSTIFY">temp = w[5]<b>.</b>g<b>.</b>x; // The dot operator is used to address the fields.</p>
+<p align="JUSTIFY">W[5] = u; // <b><i>Name equivalence</i></b> of types must be checked here.</p></dir>
+</dir>
+
+<p align="JUSTIFY">For each user-defined type, a <b>type expression tree</b> must be created at the time of parsing the type definition. The relative addresses or <b>offsets</b> of each field element (from the starting storage location of a variable of that type) can be fixed at the time of type definition and may be stored in the expression tree itself. The symbol table entry for a variable shall contain a pointer to the corresponding type expression tree.</p>
+<p align="JUSTIFY">c) <b>Supporting Dynamic Memory:</b> This requires adding pointer data type to the language. A variable may defined as a pointer to a primitive/user-defined type as follows:</p>
+<b><p align="JUSTIFY">decl</p></b><dir><b>
+</b><dir><b>
+
+</b><p align="JUSTIFY"> name2 ^p1; // p1 is a pointer to type name</p>
+<p align="JUSTIFY">integer ^p2; // p2 is a pointer to type integer</p></dir>
+</dir>
+
+<b><p align="JUSTIFY">enddecl	</p>
+</b><p align="JUSTIFY">Dynamic allocation and de-allocation may be achieved through implementing the library functions <b>new </b>and <b>free</b>. The calling syntax illustrated by the following example:</p><dir>
+<dir>
+
+<p align="JUSTIFY">pointer_var = new(<i>size</i>); // size must be <b>integer</b></p><b>
+</b><p align="JUSTIFY">free(pointer_var)</p></dir>
+</dir>
+
+<p align="JUSTIFY">Let the number of storage locations required for storing a variable of the type pointed to of Pointer_var<i> </i>be k. Then, <i>size x k</i> <b>contiguous</b> locations in memory will be allocated and Pointer_var shall contain the starting address of the memory allocated. Once allocated, the pointer variable can be used like an array. The use of pointer variables is illustrated by the following example:</p><dir>
+<dir>
+
+<p align="JUSTIFY">p1= new(10); // Now p1 is allocated and can be used like an array of 10 elements</p>
+<p align="JUSTIFY">p1[4]<b>.</b>g<b>.</b>x = 5; </p>
+<p align="JUSTIFY">free(p1) // Free the previous allocation. </p></dir>
+</dir>
+
+<b></b><p align="JUSTIFY"><b>new</b> and <b>free </b>may be implemented by declaring a large array and using it as a heap. (Refer to any standard text on Data Structures for heap management algorithms.) The tricky part is that <b><i>new</i></b><i> and <b>free</b> will have to be written in SIL! </i>(Alternate way is to write them in SIM assembly language). A neat way of doing it would be to assemble them as a separate library. The compiler can be adapted to append the library code to the target code it generates. </p><br><br>
+
+
+<p>Please send Error Reports/Comments/Queries about this document to <a href="mailto:kmurali@nitc.ac.in">kmurali@nitc.ac.in</a></p>
+
+
+
+</body></html>
