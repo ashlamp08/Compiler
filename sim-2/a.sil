@@ -1,0 +1,4 @@
+START
+IN R7
+OUT R7
+HALT
