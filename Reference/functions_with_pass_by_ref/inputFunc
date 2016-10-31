@@ -1,0 +1,28 @@
+decl
+	integer Func(integer x);
+enddecl
+integer main(){
+decl
+	integer x, result;
+enddecl
+begin
+	read(x);
+    result = Func(x);
+    write(result);
+	return 0;
+end
+}
+integer Func(integer x){
+	decl
+		integer t;
+	enddecl
+	
+	begin
+		if (x > 90) then
+			t = 91;
+		else
+			t = Func(Func(x+11));
+		endif;
+		return t;
+	end
+}

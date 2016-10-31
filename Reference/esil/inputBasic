@@ -1,0 +1,25 @@
+integer main(){
+decl
+	integer pointer;
+enddecl
+begin
+	pointer = initialize();
+	pointer = allocate();
+	write(pointer);
+	pointer = allocate();
+	write(pointer);
+	pointer = allocate();
+	write(pointer);
+	pointer = allocate();
+	write(pointer);
+	pointer = allocate();
+	write(pointer);
+	pointer = free(0);
+	write(pointer);
+	pointer = allocate();
+	write(pointer);
+	pointer = allocate();
+	write(pointer);
+    return 0;
+end
+}

@@ -1,0 +1,9 @@
+begin
+if (12<13) then
+	write(12);
+endif;
+write(1234);
+while (4>3) do
+	write(1);
+endwhile;
+end

@@ -1,0 +1,7 @@
+start
+read(a);
+b=2+5;
+c=a*8+b;
+write(c+a);
+end
+200

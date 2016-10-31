@@ -1,0 +1,29 @@
+decl
+	integer swap(integer &x, &y), a, b, result;
+enddecl
+integer main(){
+begin
+	a = 56;
+	b = 45;
+	result = 98;
+    write(a);
+    write(b);
+    result = swap(a, b);
+    write(a);
+    write(b);
+	return 0-1;
+end
+}
+integer swap(integer &x, &y){
+decl
+	integer temp;
+enddecl
+begin
+	temp = x;
+	x = y;
+	y = temp;
+	write(x);
+    write(y);
+	return 0-2;
+end
+}

@@ -1,0 +1,8 @@
+typedef name1{
+	integer x,y,z;
+	boolean a;
+}
+typedef name2{
+	integer x,y,z;
+	name2 a;
+}

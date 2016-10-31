@@ -1,0 +1,29 @@
+decl 
+	integer i,j,b[10],temp;
+	boolean c;
+enddecl
+begin
+i=0;
+while(i<10) do
+	read(b[i]);
+	i=i+1;
+endwhile;
+i=0;
+while(i<10) do
+	j=1;
+	while(j<10) do
+		if(b[j]<b[j-1]) then
+			temp = b[j];
+			b[j] = b[j-1];
+			b[j-1] = temp;
+		endif;
+		j=j+1;
+	endwhile;
+	i=i+1;
+endwhile;
+i=0;
+while(i<10) do
+	write(b[i]);
+	i=i+1;
+endwhile;
+end

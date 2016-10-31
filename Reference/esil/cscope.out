@@ -1,0 +1,13948 @@
+cscope 15 G:\work\silc\esil"               0000073438
+	@compiler.l
+
+3 
+	~<io°ªam
+>
+
+4 
+	~"sy¡axTªe.h
+"
+
+5 
+	#YY_NO_UNPUT
+
+
+	)
+
+6 
+	#vîbo£
+(
+x
+) ;
+
+7 
+	~"compûî.hµ
+"
+
+	)
+
+8 
+	glöeNumbî
+ = 1;
+
+9 
+	gcﬁNumbî
+ = 1;
+
+13 
+A
+ [
+a
+-
+zA
+-
+Z
+]
+
+14 
+D
+ [0-9]
+
+15 
+AD
+ [
+a
+-
+zA
+-
+Z0
+-9]
+
+17 %% /* 
+	$yyÀx
+ */
+
+19 "ªad" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+READ
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  READ;}
+
+20 "wrôe" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+WRITE
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  WRITE;}
+
+21 "begö" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+START
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  START;}
+
+22 "íd" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+END
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  END;}
+
+23 "if" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+IF
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  IF;}
+
+24 "thí" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+THEN
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  THEN;}
+
+25 "ñ£" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+ELSE
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  ELSE;}
+
+26 "ídif" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+ENDIF
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  ENDIF;}
+
+27 "whûe" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+WHILE
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  WHILE;}
+
+28 "do" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+DO
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  DO;}
+
+29 "ídwhûe" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+ENDWHILE
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  ENDWHILE;}
+
+30 "de˛" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+STARTDECL
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  STARTDECL;}
+
+31 "ídde˛" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+ENDDECL
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  ENDDECL;}
+
+32 "öãgî" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+INTEGER
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  INTEGER;}
+
+33 "boﬁón" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+BOOLEAN
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  BOOLEAN;}
+
+34 "<=" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+LEQ
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  LEQ;}
+
+35 ">=" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+GEQ
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  GEQ;}
+
+36 "==" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+ISEQ
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  ISEQ;}
+
+37 "!=" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+NOTEQ
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  NOTEQ;}
+
+38 "AND" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+AND
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  AND;}
+
+39 "OR" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+OR
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  OR;}
+
+40 "NOT" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+NOT
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  NOT;}
+
+41 "TRUE" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+TRUE
+,"TRUE",
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  TRUE;}
+
+42 "FALSE" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+FALSE
+,"FALSE",
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  FALSE;}
+
+43 "ªtu∫" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+RETURN
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  RETURN;}
+
+44 "ty≥def" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+TYPEDEF
+,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  TYPEDEF;}
+
+45 {
+A
+}{
+AD
+}* {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+ID
+,yyãxt,
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  ID;}
+
+46 {
+D
+}+ {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+(
+NUM
+, 
+	`©oi
+(yyãxt),
+löeNumbî
+,
+cﬁNumbî
+);cﬁNumbî+=
+yyÀng
+;  NUM;}
+
+47 "+" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('+',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+48 "-" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('-',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+49 "*" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('*',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+50 "/" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('/',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+51 "^" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('^',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+52 "=" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('=',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+53 "<" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('<',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+54 ">" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+ = 
+√w
+ 
+	`SNode
+('>',
+löeNumbî
+,
+cﬁNumbî
+); cﬁNumbî+=
+yyÀng
+;  *yytext;}
+
+55 "(" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+56 ")" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+57 "]" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+58 "[" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+59 "}" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+60 "{" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+61 ";" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+62 "," {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+63 "&" {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+64 "." {
+	`vîbo£
+(
+yyãxt
+);
+yylvÆ
+=
+nuŒ±r
+; 
+cﬁNumbî
++=
+yyÀng
+;  *yytext;}
+
+65 "\n" {
+löeNumbî
+++; 
+cﬁNumbî
+ = 1;}
+
+66 "\t" {
+cﬁNumbî
++=4;}
+
+67 . {
+cﬁNumbî
++=
+yyÀng
+;}
+
+69 
+	}
+%%
+
+71 
+	$yywøp
+(){
+
+73 
+	}
+}
+
+	@compiler.y
+
+4 
+	~<io°ªam
+>
+
+5 
+	~<cm©h
+>
+
+6 
+	~<Æg‹ôhm
+>
+
+7 
+	~<£t
+>
+
+8 
+	~"sy¡axTªe.h
+"
+
+9 
+	~"ty≥TabÀ.h
+"
+
+10 
+	~"utû.h
+"
+
+11 
+	~<°rög
+>
+
+16 
+FILE
+ *
+yyö
+;
+
+17 
+löeNumbî
+;
+
+18 
+cﬁNumbî
+;
+
+23 
+yyÀx
+();
+
+24 
+	$yyîr‹
+(c⁄° 
+°d
+::
+°rög
+ &
+s
+) {
+
+25 
+°d
+::
+cout
+ << "ERROR: "<<
+löeNumbî
+<<","<<
+cﬁNumbî
+<<": "<< 
+s
+ << "\n";
+
+26 
+	}
+}
+
+28 
+SNode
+ *
+	g¥ogøm
+, *
+	gSc›e
+[2] = {
+nuŒ±r
+,Çullptr};
+
+36 
+ty≥Node
+ *
+	gty≥TabÀ
+, *
+	göãgî
+, *
+	gboﬁón
+, *
+	gª„ªn˚
+, *
+	g_îr‹
+, *
+	gœ°
+=
+nuŒ±r
+;
+
+38 
+	gSètus
+;
+
+43 %
+tokí
+ 
+ID
+ 
+NUM
+
+
+44 %
+tokí
+ 
+READ
+ 
+WRITE
+
+
+45 %
+tokí
+ 
+START
+ 
+END
+
+
+46 %
+tokí
+ 
+IF
+ 
+THEN
+ 
+ELSE
+ 
+ENDIF
+
+
+47 %
+tokí
+ 
+WHILE
+ 
+DO
+ 
+ENDWHILE
+
+
+48 %
+tokí
+ 
+ISEQ
+ 
+NOTEQ
+ 
+LEQ
+ 
+GEQ
+
+
+49 %
+tokí
+ 
+STARTDECL
+ 
+ENDDECL
+
+
+50 %
+tokí
+ 
+INTEGER
+ 
+BOOLEAN
+
+
+51 %
+tokí
+ 
+AND
+ 
+OR
+ 
+NOT
+
+
+52 %
+tokí
+ 
+TRUE
+ 
+FALSE
+
+
+53 %
+tokí
+ 
+FUNC
+ 
+RETURN
+
+
+54 %
+tokí
+ 
+TYPEDEF
+
+
+56 %
+n⁄assoc
+ 
+NOTEQ
+
+
+57 %
+n⁄assoc
+ 
+ISEQ
+
+
+58 %
+n⁄assoc
+ 
+LEQ
+
+
+59 %
+n⁄assoc
+ 
+GEQ
+
+
+60 %
+n⁄assoc
+ '<'
+
+61 %
+n⁄assoc
+ '>'
+
+63 %
+À·
+ '+' '-'
+
+64 %
+À·
+ '*' '/'
+
+65 %
+right
+ '^'
+
+66 %
+À·
+ 
+NOT
+
+
+67 %
+À·
+ 
+AND
+
+
+68 %
+À·
+ 
+OR
+
+
+69 %% /* 
+	$yy∑r£
+ */ 
+	`yyÀx
+()
+
+72 
+PROG
+:
+
+73 
+DECLERATIONS
+ 
+FUNCTIONLIST
+ {
+
+74 
+¥ogøm
+->
+	`£tNext
+(
+$2
+);
+
+75 
+symbﬁNode
+ *
+i
+ = 
+$1
+->
+	`gëTabÀ
+();i;i=i->
+	`gëNext
+())
+
+76 
+i
+->
+	`£tAsGlobÆ
+();
+
+77 if(
+$1
+){
+
+78 
+¥ogøm
+->
+	`£tTabÀ
+(
+$1
+->
+	`gëTabÀ
+());
+
+79 
+dñëe
+ 
+$1
+;
+
+84 | 
+TYPEDEFLIST
+ 
+DECLERATIONS
+ 
+FUNCTIONLIST
+
+
+86 
+¥ogøm
+->
+	`£tNext
+(
+$3
+);
+
+87 
+symbﬁNode
+ *
+i
+ = 
+$2
+->
+	`gëTabÀ
+();i;i=i->
+	`gëNext
+())
+
+88 
+i
+->
+	`£tAsGlobÆ
+();
+
+89 if(
+$2
+){
+
+90 
+¥ogøm
+->
+	`£tTabÀ
+(
+$2
+->
+	`gëTabÀ
+());
+
+91 
+dñëe
+ 
+$2
+;
+
+94 
+dñëe
+ 
+$1
+;
+
+98 
+TYPEDEFLIST
+:
+
+99 
+TYPEDEFITEM
+ 
+TYPEDEFLIST
+ {
+
+100 
+$$
+ = 
+$1
+;
+
+101 
+$$
+->
+	`£tNext
+(
+$2
+);
+
+103 | 
+TYPEDEFITEM
+ { 
+$$
+ = 
+$1
+; }
+
+106 
+TYPEDEFITEM
+:
+
+107 
+TYPEDEFHEAD
+ '{' 
+DLIST
+ '}' {
+
+108 
+SNode
+ *
+defööti⁄Li°
+ = 
+$3
+;
+
+109 
+ty≥Node
+ *
+°ru˘uª
+ = 
+nuŒ±r
+;
+
+110 
+symbﬁNode
+ *
+ãmpTabÀ
+ = 
+√w
+ 
+	`symbﬁNode
+("&&&", 
+nuŒ±r
+);
+
+111 if(!
+defööti⁄Li°
+ || !
+	`¥o˚ssDe˛î©i⁄s
+(
+ãmpTabÀ
+, definintionList)){
+
+114 
+cou¡
+ = 0;
+
+115 
+symbﬁNode
+ *
+i
+ = 
+ãmpTabÀ
+->
+	`gëNext
+(); i !
+nuŒ±r
+; i = i->getNext()){
+
+116 if(
+i
+->
+	`gëSize
+()>=0){
+
+117 
+	`îr‹
+("NÿAºay de˛¨©i⁄†Ælowed",
+defööti⁄Li°
+->
+löeNo
+, defööti⁄Li°->
+cﬁNo
+);
+
+120 if(
+i
+->
+	`gëSize
+()==-2){
+
+121 
+	`îr‹
+("NÿFun˘i⁄ de˛¨©i⁄†Ælowed (yë)",
+defööti⁄Li°
+->
+löeNo
+, defööti⁄Li°->
+cﬁNo
+);
+
+124 if(
+cou¡
+ == 9){
+
+125 
+	`îr‹
+("Cuºíéy o∆y 8 d©®membî†Ælowed",
+defööti⁄Li°
+->
+löeNo
+, defööti⁄Li°->
+cﬁNo
+);
+
+128 
+ty≥Node
+ *
+√xt
+ = 
+√w
+ 
+	`ty≥Node
+(
+i
+->
+	`gëName
+());
+
+129 
+√xt
+->
+	`£tE¡ry
+(
+i
+->
+	`gëTy≥
+());
+
+130 
+√xt
+->
+	`£tNext
+(
+°ru˘uª
+);
+
+131 
+√xt
+->
+	`£tIndex
+(
+cou¡
+);
+
+132 
+°ru˘uª
+ = 
+√xt
+;
+
+134 
+cou¡
+++;
+
+136 
+dñëe
+ 
+ãmpTabÀ
+;
+
+137 
+dñëe
+ 
+defööti⁄Li°
+;
+
+138 
+œ°
+->
+	`£tE¡ry
+(
+°ru˘uª
+);
+
+139 
+$1
+->
+	`£tPTR1
+(
+$2
+);
+
+140 
+$1
+->
+	`£tPTR2
+(
+$4
+);
+
+141 
+$$
+ = 
+$1
+;
+
+144 
+TYPEDEFHEAD
+:
+
+145 
+TYPEDEF
+ 
+ID
+ {
+
+146 if(
+ty≥TabÀ
+->
+	`lookUp
+(
+$2
+->
+	`gëName
+())){
+
+147 
+	`îr‹
+("'"+
+$2
+->
+	`gëName
+()+"'áÃódy De˛¨ed. RedeföögÇŸ AŒowed.",$2->
+löeNo
+, $2->
+cﬁNo
+);
+
+150 
+œ°
+ = 
+ty≥TabÀ
+->
+	`ö°Æl
+(
+$2
+->
+	`gëName
+(),Üast);
+
+151 
+$$
+ = 
+$2
+;
+
+152 
+dñëe
+ 
+$1
+;
+
+155 
+FUNCTIONLIST
+:
+
+156 
+FUNCTIONDEF
+ 
+FUNCTIONLIST
+ { 
+$$
+ = 
+$1
+; $1->
+	`£tNext
+(
+$2
+); }
+
+157 | 
+FUNCTIONDEF
+ { 
+$$
+ = 
+$1
+; }
+
+160 
+FUNCTIONDEF
+:
+
+161 
+FUNCTIONHEADER
+ 
+START
+ 
+SLIST
+ 
+RETSTMT
+ 
+END
+ '}'
+
+163 
+$$
+ = 
+$1
+;
+
+164 
+$$
+->
+	`£tPTR2
+(
+$2
+);
+
+165 
+$4
+->
+	`£tRëu∫Ty≥
+(
+$$
+->
+	`gëRëu∫Ty≥
+());
+
+166 
+$4
+->
+	`£tTabÀ
+(
+$$
+->
+	`gëTabÀ
+());
+
+167 if(
+$3
+==
+nuŒ±r
+){
+
+168 
+$2
+->
+	`£tNext
+(
+$4
+);
+
+171 
+$2
+->
+	`£tNext
+(
+$3
+);
+
+172 
+SNode
+ *
+i
+;
+
+173 
+i
+=
+$3
+;i->
+	`gëNext
+();i=i->getNext());
+
+174 
+i
+->
+	`£tNext
+(
+$4
+);
+
+176 
+Sc›e
+[0] = 
+nuŒ±r
+;
+
+177 
+dñëe
+ 
+$5
+;
+
+180 
+FUNCTIONHEADER
+:
+
+181 
+TYPE
+ 
+ID
+ '(' 
+ARGLIST
+ ')' '{' 
+DECLERATIONS
+
+
+183 
+$$
+ = 
+	`¥o˚ssFun˘i⁄Hódî
+(
+$1
+, 
+$2
+, 
+$4
+, 
+$7
+, 
+Sc›e
+[1]);
+
+184 if(
+$$
+==
+nuŒ±r
+){
+
+185 
+Sètus
+ = 
+FAIL
+;
+
+186 
+$$
+ = 
+√w
+ 
+	`SNode
+(
+FUNC
+, 
+$2
+->
+	`gëName
+(), $2->
+löeNo
+, $2->
+cﬁNo
+);
+
+187 
+$$
+->
+	`£tRëu∫Ty≥
+(
+$1
+->
+	`gëRëu∫Ty≥
+());
+
+189 
+Sc›e
+[0] = 
+$$
+;
+
+190 
+dñëe
+ 
+$1
+;
+
+191 
+dñëe
+ 
+$2
+;
+
+192 
+dñëe
+ 
+$4
+;
+
+193 
+dñëe
+ 
+$7
+;
+
+197 
+DECLERATIONS
+:
+
+198 
+STARTDECL
+ 
+DLIST
+ 
+ENDDECL
+ {
+
+199 
+symbﬁNode
+ *
+TabÀ
+ = 
+√w
+ 
+	`symbﬁNode
+("&&&", 
+nuŒ±r
+);
+
+200 
+	`¥o˚ssDe˛î©i⁄s
+(
+TabÀ
+, 
+$2
+);
+
+201 
+dñëe
+ 
+$1
+;dñëê
+$2
+;dñëê
+$3
+;
+
+202 
+$$
+ = 
+√w
+ 
+	`SNode
+(-1, "&&&",
+$2
+->
+löeNo
+, $2->
+cﬁNo
+);
+
+203 
+$$
+->
+	`£tTabÀ
+(
+TabÀ
+);
+
+204 if(!
+Sc›e
+[1]){
+
+206 
+Sc›e
+[1] = 
+$$
+;
+
+207 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("maö", 
+öãgî
+, -2);
+
+208 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("öôülize", 
+öãgî
+, -2);
+
+209 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("Æloˇã", 
+nuŒ±r
+, -2);
+
+210 
+TabÀ
+ = 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("‰ì", 
+öãgî
+, -2);
+
+211 
+°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> 
+¨gli°
+;
+
+212 
+¨gli°
+.
+	`push_back
+(
+√w
+ 
+	`symbﬁNode
+("addr", 
+nuŒ±r
+));
+
+213 
+¨gli°
+.
+	`back
+()->
+	`£tAsPassByRe„ªn˚
+();
+
+215 
+TabÀ
+->
+	`£tArgs
+(
+¨gli°
+);
+
+219 
+$$
+=
+nuŒ±r
+;
+
+220 if(!
+Sc›e
+[1]){
+
+221 
+SNode
+ *
+ãmp
+ = 
+√w
+ 
+	`SNode
+(-1, "&&&", -1, -1);
+
+222 
+ãmp
+->
+	`£tTabÀ
+(
+√w
+ 
+	`symbﬁNode
+("&&&", 
+nuŒ±r
+));
+
+223 
+$$
+ = 
+Sc›e
+[1] = 
+ãmp
+;
+
+224 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("maö", 
+öãgî
+, -2);
+
+225 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("öôülize", 
+öãgî
+, -2);
+
+226 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("Æloˇã", 
+nuŒ±r
+, -2);
+
+227 
+symbﬁNode
+ *
+TabÀ
+ = 
+Sc›e
+[1]->
+	`gëTabÀ
+()->
+	`ö°Æl
+("‰ì", 
+öãgî
+, -2);
+
+228 
+°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> 
+¨gli°
+;
+
+229 
+¨gli°
+.
+	`push_back
+(
+√w
+ 
+	`symbﬁNode
+("addr", 
+nuŒ±r
+));
+
+230 
+¨gli°
+.
+	`back
+()->
+	`£tAsPassByRe„ªn˚
+();
+
+231 
+TabÀ
+->
+	`£tArgs
+(
+¨gli°
+);
+
+235 
+DLIST
+:
+
+236 
+DECLARE
+ 
+DLIST
+ {
+$$
+ = 
+$1
+; $1->
+	`£tNext
+(
+$2
+);}
+
+237 | 
+DECLARE
+ {
+$$
+ = 
+$1
+;}
+
+240 
+DECLARE
+:
+
+241 
+TYPE
+ 
+MULDCL
+ ';' {
+$1
+->
+	`£tPTR3
+(
+$2
+); 
+$$
+ = $1;}
+
+244 
+MULDCL
+:
+
+245 
+VARDCL
+ ',' 
+MULDCL
+ {
+$$
+ = 
+$1
+; $1->
+	`£tPTR3
+(
+$3
+);}
+
+246 | 
+VARDCL
+ {
+$$
+ = 
+$1
+;}
+
+249 
+VARDCL
+:
+
+250 
+ID
+ '(' 
+ARGLIST
+ ')' {
+$$
+ = 
+$1
+; $$->
+	`£tPTR2
+(
+$3
+);$$->
+	`£tNodeTy≥
+(
+FUNC
+);}
+
+251 | 
+ID
+ '[' 
+NUM
+ ']' {
+$$
+ = 
+$1
+; $$->
+	`£tPTR2
+(
+$3
+);}
+
+252 | 
+ID
+ {
+$$
+ = 
+$1
+;}
+
+255 
+ARGLIST
+:
+
+256 
+ARGGROUP
+ ';' 
+ARGLIST
+ {
+$$
+ = 
+$1
+; $1->
+	`£tNext
+(
+$3
+);}
+
+257 | 
+ARGGROUP
+ {
+$$
+ = 
+$1
+;}
+
+258 | {
+$$
+ = 
+nuŒ±r
+;}
+
+261 
+ARGGROUP
+:
+
+262 
+TYPE
+ 
+IDLIST
+ {
+$$
+ = 
+$1
+; $$->
+	`£tPTR3
+(
+$2
+);}
+
+265 
+IDLIST
+:
+
+266 '&' 
+ID
+ ',' 
+IDLIST
+ {
+$$
+ = 
+$2
+; $$->
+	`£tRëu∫Ty≥
+(
+ª„ªn˚
+); $$->
+	`£tNext
+(
+$4
+);}
+
+267 | 
+ID
+ ',' 
+IDLIST
+ {
+$$
+ = 
+$1
+; $$->
+	`£tNext
+(
+$3
+);}
+
+268 | '&' 
+ID
+ {
+$$
+ = 
+$2
+; $$->
+	`£tRëu∫Ty≥
+(
+ª„ªn˚
+);}
+
+269 | 
+ID
+ {
+$$
+ = 
+$1
+;}
+
+271 
+TYPE
+:
+
+272 
+INTEGER
+ {
+$$
+ = 
+$1
+;$$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+273 | 
+BOOLEAN
+ {
+$$
+ = 
+$1
+;$$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+274 | 
+ID
+ {
+
+275 
+ty≥Node
+ *
+ãmp
+ = 
+ty≥TabÀ
+->
+	`lookUp
+(
+$1
+->
+	`gëName
+());
+
+276 if(!
+ãmp
+){
+
+277 
+	`îr‹
+("NÿD©®Ty≥ '"+
+$1
+->
+	`gëName
+()+"'", $1->
+löeNo
+, $1->
+cﬁNo
+);
+
+280 
+$$
+ = 
+$1
+;
+
+281 
+$$
+->
+	`£tRëu∫Ty≥
+(
+ãmp
+);
+
+285 
+SLIST
+:
+
+286 
+STATEMENTS
+ {
+$$
+ = 
+$1
+;}
+
+287 | {
+$$
+ = 
+nuŒ±r
+;}
+
+289 
+STATEMENTS
+:
+
+290 
+STMT
+ 
+STATEMENTS
+ {
+$$
+ = 
+$1
+; $1->
+	`£tNext
+(
+$2
+);}
+
+291 | 
+STMT
+ {
+$$
+ = 
+$1
+;}
+
+294 
+RETSTMT
+:
+
+295 
+RETURN
+ 
+EXPR
+ ';' {
+$$
+=
+$1
+; $1->
+	`£tPTR2
+(
+$2
+);}
+
+298 
+STMT
+:
+
+299 
+IDENT
+ '=' 
+EXPR
+ ';' {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+);}
+
+300 | 
+READ
+ '(' 
+IDENT
+ ')' ';' {
+$$
+ = 
+$1
+; $$->
+	`£tPTR2
+(
+$3
+);}
+
+301 | 
+WRITE
+ '(' 
+EXPR
+ ')' ';' {
+
+302 
+$$
+ = 
+$1
+;
+
+303 
+$$
+->
+	`£tPTR2
+(
+$3
+);
+
+305 | 
+IF
+ '(' 
+EXPR
+ ')' 
+THEN
+ 
+SLIST
+ 
+ENDIF
+ ';'
+
+307 
+$$
+ = 
+$1
+;
+
+308 
+$$
+->
+	`£tPTR1
+(
+$3
+);$$->
+	`£tPTR2
+(
+$6
+);
+
+309 
+dñëe
+ 
+$5
+;dñëê
+$7
+;
+
+311 | 
+IF
+ '(' 
+EXPR
+ ')' 
+THEN
+ 
+SLIST
+ 
+ELSE
+ SLIST 
+ENDIF
+ ';'
+
+313 
+$$
+ = 
+$1
+;
+
+314 
+$$
+->
+	`£tPTR1
+(
+$3
+);$$->
+	`£tPTR2
+(
+$6
+);$$->
+	`£tPTR3
+(
+$8
+);
+
+315 
+dñëe
+ 
+$5
+;dñëê
+$7
+; dñëê
+$9
+;
+
+317 | 
+WHILE
+ '(' 
+EXPR
+ ')' 
+DO
+ 
+SLIST
+ 
+ENDWHILE
+ ';'
+
+319 
+$$
+ = 
+$1
+;
+
+320 
+$$
+->
+	`£tPTR1
+(
+$3
+);$$->
+	`£tPTR2
+(
+$6
+);
+
+321 
+dñëe
+ 
+$5
+; dñëê
+$7
+;
+
+325 
+EXPR
+:
+
+326 
+EXPR
+ '+' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+327 | 
+EXPR
+ '-' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+328 | 
+EXPR
+ '*' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+329 | 
+EXPR
+ '/' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+330 | 
+EXPR
+ '^' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+331 | 
+EXPR
+ '<' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+332 | 
+EXPR
+ '>' EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+333 | 
+EXPR
+ 
+LEQ
+ EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+334 | 
+EXPR
+ 
+GEQ
+ EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+335 | 
+EXPR
+ 
+ISEQ
+ EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+336 | 
+EXPR
+ 
+NOTEQ
+ EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+337 | 
+EXPR
+ 
+AND
+ EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+338 | 
+EXPR
+ 
+OR
+ EXPR {
+$$
+ = 
+$2
+; $$->
+	`£tPTR1
+(
+$1
+); $$->
+	`£tPTR2
+(
+$3
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+339 | 
+NOT
+ 
+EXPR
+ {
+$$
+ = 
+$1
+; $$->
+	`£tPTR1
+(
+$2
+); $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+340 | '(' 
+EXPR
+ ')' {
+$$
+ = 
+$2
+;}
+
+341 | 
+TRUE
+ {
+$$
+ = 
+$1
+; $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+342 | 
+FALSE
+ {
+$$
+ = 
+$1
+; $$->
+	`£tRëu∫Ty≥
+(
+boﬁón
+);}
+
+343 | 
+NUM
+ {
+$$
+ = 
+$1
+; $$->
+	`£tRëu∫Ty≥
+(
+öãgî
+);}
+
+344 | 
+IDENT
+ {
+$$
+ = 
+$1
+;}
+
+345 | 
+ID
+ '(' 
+ACTARGLIST
+ ')' {
+
+346 
+$$
+ = 
+	`v¨übÀAc˚ss
+(
+$1
+, 
+$3
+, 
+Sc›e
+, 
+FUNCTION
+);
+
+347 if(!
+$$
+){
+
+348 
+Sètus
+ = 
+FAIL
+;
+
+349 
+$$
+ = 
+$1
+;
+
+350 
+$1
+->
+	`£tRëu∫Ty≥
+(
+_îr‹
+);
+
+354 
+IDENT
+:
+
+355 
+ID
+ '[' 
+EXPR
+ ']' '.' 
+IDENTLIST
+
+
+357 
+$1
+->
+	`£tPTR2
+(
+$6
+);
+
+358 
+$$
+ = 
+	`v¨übÀAc˚ss
+(
+$1
+, 
+$3
+, 
+Sc›e
+, 
+ARRAY
+);
+
+359 if(!
+$$
+){
+
+360 
+Sètus
+ = 
+FAIL
+;
+
+361 
+$$
+ = 
+$1
+;
+
+362 
+$1
+->
+	`£tRëu∫Ty≥
+(
+_îr‹
+);
+
+365 | 
+ID
+ '[' 
+EXPR
+ ']' {
+
+366 
+$$
+ = 
+	`v¨übÀAc˚ss
+(
+$1
+, 
+$3
+, 
+Sc›e
+, 
+ARRAY
+);
+
+367 if(!
+$$
+){
+
+368 
+Sètus
+ = 
+FAIL
+;
+
+369 
+$$
+ = 
+$1
+;
+
+370 
+$1
+->
+	`£tRëu∫Ty≥
+(
+_îr‹
+);
+
+373 | 
+IDENTLIST
+ {
+
+374 
+$$
+ = 
+	`v¨übÀAc˚ss
+(
+$1
+, 
+nuŒ±r
+, 
+Sc›e
+, 
+VARIABLE
+);
+
+375 if(!
+$$
+){
+
+376 
+Sètus
+ = 
+FAIL
+;
+
+377 
+$$
+ = 
+$1
+;
+
+378 
+$1
+->
+	`£tRëu∫Ty≥
+(
+_îr‹
+);
+
+382 
+IDENTLIST
+:
+
+383 
+ID
+ '.' 
+IDENTLIST
+ { 
+$$
+ = 
+$1
+; $$->
+	`£tPTR2
+(
+$3
+);}
+
+384 | 
+ID
+ { 
+$$
+ = 
+$1
+; }
+
+386 
+ACTARGLIST
+:
+
+387 
+EXPR
+ ',' 
+ACTARGLIST
+ { 
+$$
+ = 
+$1
+; $$->
+	`£tNext
+(
+$3
+); }
+
+388 | 
+EXPR
+ { 
+$$
+ = 
+$1
+; }
+
+389 | { 
+$$
+ = 
+nuŒ±r
+; }
+
+391 
+	}
+%%
+
+395 
+	$maö
+(
+¨gc
+, *
+¨gv
+[]) {
+
+396 
+Sètus
+ = 
+PASS
+;
+
+397 i‡(
+¨gc
+ != 2 &&árgc != 3) {
+
+398 
+°d
+::
+cout
+ << "Error:Ço input files\n";
+
+399 
+°d
+::
+cout
+ << "Usage: \tcompiler.exe <input_file> \n\tcompiler.exe <input_file> <output_file>\n";
+
+403 
+yyö
+ = 
+	`f›í
+(
+¨gv
+[1], "r");
+
+404 i‡(!
+yyö
+) {
+
+405 
+°d
+::
+cout
+ << "'" << 
+¨gv
+[1] << "' doesÇotÉxists.\n";
+
+409 
+FILE
+ *
+ouçut
+;
+
+410 if(
+¨gc
+ == 3)
+
+411 
+ouçut
+ = 
+	`f›í
+(
+¨gv
+[2], "wb");
+
+413 
+ouçut
+ = 
+	`f›í
+("a.sil", "wb");
+
+414 if(!
+ouçut
+){
+
+415 
+°d
+::
+cout
+ << "Cant writeÅo file 'test.sil'\n";
+
+418 
+¥ogøm
+ = 
+√w
+ 
+	`SNode
+(
+START
+,-1,-1);
+
+419 
+ty≥TabÀ
+ = 
+√w
+ 
+	`ty≥Node
+("&&&");
+
+421 
+_îr‹
+ = 
+ty≥TabÀ
+->
+	`ö°Æl
+("_ERROR", 
+nuŒ±r
+);
+
+422 
+öãgî
+ = 
+ty≥TabÀ
+->
+	`ö°Æl
+("öãgî", 
+nuŒ±r
+);
+
+423 
+boﬁón
+ = 
+ty≥TabÀ
+->
+	`ö°Æl
+("boﬁón", 
+nuŒ±r
+);
+
+424 
+ª„ªn˚
+ = 
+√w
+ 
+	`ty≥Node
+("&");
+
+425 if(
+	`yy∑r£
+()){
+
+426 
+Sètus
+ = 
+FAIL
+;
+
+428 
+ty≥TabÀ
+->
+	`¥öt
+();
+
+429 
+¥ogøm
+->
+	`¥öt
+();
+
+430 
+Sètus
+ = 
+°d
+::
+	`mö
+(Sètus, 
+¥ogøm
+->
+	`ty≥Check
+());
+
+431 
+Sètus
+ = 
+°d
+::
+	`mö
+(Sètus, 
+	`checkFun˘i⁄De˛¨ed
+(
+¥ogøm
+));
+
+432 if(
+Sètus
+<=
+WARN
+){
+
+433 
+dñëe
+ 
+¥ogøm
+->
+	`gëTabÀ
+();
+
+434 
+dñëe
+ 
+¥ogøm
+;
+
+435 
+°d
+::
+cout
+ << "SNode†Le· = " << 
+SNode
+::
+	`gëCou¡
+() << "\n";
+
+436 
+°d
+::
+cout
+ << "symbﬁNode†Le· = " << 
+symbﬁNode
+::
+	`gëCou¡
+() << "\n";
+
+443 
+	`gíî©eCode
+(
+¥ogøm
+, 
+ouçut
+);
+
+444 
+	`addLibøry
+(
+ouçut
+);
+
+446 
+dñëe
+ 
+¥ogøm
+->
+	`gëTabÀ
+();
+
+447 
+dñëe
+ 
+¥ogøm
+;
+
+448 
+°d
+::
+cout
+ << "SNode†Le· = " << 
+SNode
+::
+	`gëCou¡
+() << "\n";
+
+449 
+°d
+::
+cout
+ << "symbﬁNode†Le· = " << 
+symbﬁNode
+::
+	`gëCou¡
+() << "\n";
+
+451 
+	}
+}
+
+	@lib.h
+
+1 
+Ârötf
+(
+ouçut
+, "FUNCinitialize:\n");
+
+2 
+Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+3 
+Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+4 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+5 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+6 
+Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+7 
+Ârötf
+(
+ouçut
+, "MOV SP, R0\n");
+
+8 
+Ârötf
+(
+ouçut
+, "MOV [256], 0\n");
+
+9 
+Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+10 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+11 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+12 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+13 
+Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+14 
+Ârötf
+(
+ouçut
+, "WHILES1:\n");
+
+15 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+16 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+17 
+Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+18 
+Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+19 
+Ârötf
+(
+ouçut
+, "MOV R1, 256\n");
+
+20 
+Ârötf
+(
+ouçut
+, "LT R0 R1\n");
+
+21 
+Ârötf
+(
+ouçut
+, "JZ R0, ENDWHILE1\n");
+
+22 
+Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+23 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+24 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+25 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+26 
+Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+27 
+Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+28 
+Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+29 
+Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+30 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+31 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+32 
+Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+33 
+Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+34 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+35 
+Ârötf
+(
+ouçut
+, "ADD R0 R1\n");
+
+36 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+37 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+38 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+39 
+Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+40 
+Ârötf
+(
+ouçut
+, "JMP WHILES1\n");
+
+41 
+Ârötf
+(
+ouçut
+, "ENDWHILE1:\n");
+
+42 
+Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+43 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+44 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+45 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+46 
+Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+47 
+Ârötf
+(
+ouçut
+, "WHILES2:\n");
+
+48 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+49 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+50 
+Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+51 
+Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+52 
+Ârötf
+(
+ouçut
+, "MOV R1, 248\n");
+
+53 
+Ârötf
+(
+ouçut
+, "LT R0 R1\n");
+
+54 
+Ârötf
+(
+ouçut
+, "JZ R0, ENDWHILE2\n");
+
+55 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+56 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+57 
+Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+58 
+Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+59 
+Ârötf
+(
+ouçut
+, "MOV R1, 8\n");
+
+60 
+Ârötf
+(
+ouçut
+, "ADD R0 R1\n");
+
+61 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+62 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+63 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+64 
+Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+65 
+Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+66 
+Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+67 
+Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+68 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+69 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+70 
+Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+71 
+Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+72 
+Ârötf
+(
+ouçut
+, "MOV R1, 8\n");
+
+73 
+Ârötf
+(
+ouçut
+, "ADD R0 R1\n");
+
+74 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+75 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+76 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+77 
+Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+78 
+Ârötf
+(
+ouçut
+, "JMP WHILES2\n");
+
+79 
+Ârötf
+(
+ouçut
+, "ENDWHILE2:\n");
+
+80 
+Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+81 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+82 
+Ârötf
+(
+ouçut
+, "SUB R0 R1\n");
+
+83 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+84 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+85 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+86 
+Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+87 
+Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+88 
+Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+89 
+Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+90 
+Ârötf
+(
+ouçut
+, "MOV R0, -2\n");
+
+91 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+92 
+Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+93 
+Ârötf
+(
+ouçut
+, "MOV R1, 0\n");
+
+94 
+Ârötf
+(
+ouçut
+, "MOV [R0], R1\n");
+
+95 
+Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+96 
+Ârötf
+(
+ouçut
+, "POP BP\n");
+
+97 
+Ârötf
+(
+ouçut
+, "RET\n");
+
+98 
+Ârötf
+(
+ouçut
+, "FUNCallocate:\n");
+
+99 
+Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+100 
+Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+101 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+102 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+103 
+Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+104 
+Ârötf
+(
+ouçut
+, "MOV SP, R0\n");
+
+105 
+Ârötf
+(
+ouçut
+, "MOV R0, [256]\n");
+
+106 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+107 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+108 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+109 
+Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+110 
+Ârötf
+(
+ouçut
+, "IFSTART1:\n");
+
+111 
+Ârötf
+(
+ouçut
+, "MOV R0, [256]\n");
+
+112 
+Ârötf
+(
+ouçut
+, "MOV R1, 0\n");
+
+113 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+114 
+Ârötf
+(
+ouçut
+, "SUB R1 R2\n");
+
+115 
+Ârötf
+(
+ouçut
+, "NE R0 R1\n");
+
+116 
+Ârötf
+(
+ouçut
+, "JZ R0, ENDIF1\n");
+
+117 
+Ârötf
+(
+ouçut
+, "MOV R1, [256]\n");
+
+118 
+Ârötf
+(
+ouçut
+, "MOV R2, 0 \n");
+
+119 
+Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+120 
+Ârötf
+(
+ouçut
+, "MOV R1, [R1]\n");
+
+121 
+Ârötf
+(
+ouçut
+, "MOV [256], R1\n");
+
+122 
+Ârötf
+(
+ouçut
+, "ENDIF1:\n");
+
+123 
+Ârötf
+(
+ouçut
+, "MOV R0, -2\n");
+
+124 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+125 
+Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+126 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+127 
+Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+128 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+129 
+Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+130 
+Ârötf
+(
+ouçut
+, "MOV [R0], R1\n");
+
+131 
+Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+132 
+Ârötf
+(
+ouçut
+, "POP BP\n");
+
+133 
+Ârötf
+(
+ouçut
+, "RET\n");
+
+134 
+Ârötf
+(
+ouçut
+, "FUNCfree:\n");
+
+135 
+Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+136 
+Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+137 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+138 
+Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+139 
+Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+140 
+Ârötf
+(
+ouçut
+, "MOV SP, R0\n");
+
+141 
+Ârötf
+(
+ouçut
+, "MOV R0, [256]\n");
+
+142 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+143 
+Ârötf
+(
+ouçut
+, "MOV R2, -3\n");
+
+144 
+Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+145 
+Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+146 
+Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+147 
+Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+148 
+Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+149 
+Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+150 
+Ârötf
+(
+ouçut
+, "MOV R1, -3\n");
+
+151 
+Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+152 
+Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+153 
+Ârötf
+(
+ouçut
+, "MOV [256], R0\n");
+
+154 
+Ârötf
+(
+ouçut
+, "MOV R0, -2\n");
+
+155 
+Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+156 
+Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+157 
+Ârötf
+(
+ouçut
+, "MOV R1, 0\n");
+
+158 
+Ârötf
+(
+ouçut
+, "MOV [R0], R1\n");
+
+159 
+Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+160 
+Ârötf
+(
+ouçut
+, "POP BP\n");
+
+161 
+Ârötf
+(
+ouçut
+, "RET"
+
+	@symbolTable.cpp
+
+1 
+	~"symbﬁTabÀ.h
+"
+
+2 
+	~"compûî.hµ
+"
+
+3 
+	~<io°ªam
+>
+
+5 
+	gsymbﬁNode
+::
+cou¡
+ = 0;
+
+6 
+Pass
+[];
+
+7 
+Down
+[];
+
+9 
+	gsymbﬁNode
+::
+	$symbﬁNode
+(
+°d
+::
+°rög
+ 
+«me
+, 
+ty≥Node
+ *
+ty≥
+) {
+
+10 
+NAME
+ = 
+«me
+;
+
+11 
+TYPE
+ = 
+ty≥
+;
+
+12 
+SIZE
+ = -1;
+
+13 
+BINDING
+ = -1;
+
+14 
+NEXT
+ = 
+nuŒ±r
+;
+
+15 
+globÆ
+ = 
+Ál£
+;
+
+16 
+∑s£dByRef
+ = 
+Ál£
+;
+
+17 
+cou¡
+++;
+
+19 
+	}
+}
+
+21 
+	gsymbﬁNode
+::~
+	$symbﬁNode
+() {
+
+23 
+symbﬁNode
+ *
+i
+ : 
+ARGLIST
+)
+
+24 i‡(
+i
+ !
+nuŒ±r
+)
+
+25 
+dñëe
+ 
+i
+;
+
+26 i‡(
+NEXT
+ !
+nuŒ±r
+)
+
+27 
+dñëe
+ 
+NEXT
+;
+
+28 
+cou¡
+--;
+
+29 
+	}
+}
+
+31 
+symbﬁNode
+ *
+	gsymbﬁNode
+::
+	$ö°Æl
+(
+°d
+::
+°rög
+ 
+«me
+, 
+ty≥Node
+ *
+ty≥
+, 
+size
+) {
+
+32 
+symbﬁNode
+ *
+œ°
+ = 
+this
+;
+
+33 
+symbﬁNode
+ *
+i
+ = 
+this
+->
+NEXT
+; i !
+nuŒ±r
+; i = i->NEXT) {
+
+34 i‡(
+«me
+.
+	`com∑ª
+(
+i
+->
+NAME
+) == 0)
+
+35  
+nuŒ±r
+;
+
+36 
+œ°
+ = 
+i
+;
+
+38 
+symbﬁNode
+ *
+ãmp
+ = 
+√w
+ 
+	`symbﬁNode
+(
+«me
+, 
+ty≥
+);
+
+39 i‡(
+size
+ != -1)
+
+40 
+ãmp
+->
+	`£tSize
+(
+size
+);
+
+41 
+œ°
+->
+NEXT
+ = 
+ãmp
+;
+
+42  
+ãmp
+;
+
+43 
+	}
+}
+
+45 
+symbﬁNode
+ *
+	gsymbﬁNode
+::
+	$lookUp
+(
+°d
+::
+°rög
+ 
+«me
+) {
+
+46 
+symbﬁNode
+ *
+i
+ = 
+this
+->
+NEXT
+; i !
+nuŒ±r
+; i = i->NEXT) {
+
+47 i‡(
+«me
+.
+	`com∑ª
+(
+i
+->
+NAME
+) == 0)
+
+48  
+i
+;
+
+50  
+nuŒ±r
+;
+
+51 
+	}
+}
+
+53 
+	g°d
+::
+°rög
+ 
+symbﬁNode
+::
+	$to_°rög
+() {
+
+54 
+°d
+::
+°rög
+ 
+°r
+ = std::
+	`to_°rög
+(()
+this
+Ë+ ":<" + 
+NAME
+;
+
+55 if(
+TYPE
+)
+
+56 
+°r
+ +","+
+TYPE
+->
+	`gëTy≥Name
+();
+
+57 i‡(
+globÆ
+)
+
+58 
+°r
+ += ",g";
+
+59 i‡(
+∑s£dByRef
+)
+
+60 
+°r
+ += ",&";
+
+61 
+°r
+ +"," + 
+°d
+::
+	`to_°rög
+(
+BINDING
+);
+
+62 i‡(
+SIZE
+ > 0)
+
+63 
+°r
+ +"," + 
+°d
+::
+	`to_°rög
+(
+SIZE
+);
+
+64 i‡(
+SIZE
+ == -2) {
+
+65 
+°r
+ += ",FUNC";
+
+66 autÿ
+i
+ : 
+ARGLIST
+) {
+
+67 
+°r
+ +"," + 
+i
+->
+	`to_°rög
+();
+
+70  
+°r
+ + ">";
+
+71 
+	}
+}
+
+73 
+	gsymbﬁNode
+::
+	$¥öt
+(
+°d
+::
+°rög
+ 
+°r
+) {
+
+74 
+°d
+::
+cout
+ << 
+°r
+ << "Declerations:\n";
+
+75 
+symbﬁNode
+ *
+i
+ = 
+this
+; i !
+nuŒ±r
+; i = i->
+NEXT
+)
+
+76 i‡(
+i
+->
+NEXT
+)
+
+77 
+°d
+::
+cout
+ << 
+°r
+ << 
+Pass
+ << 
+i
+->
+	`to_°rög
+() << "\n";
+
+79 
+°d
+::
+cout
+ << 
+°r
+ << 
+Down
+ << 
+i
+->
+	`to_°rög
+() << "\n";
+
+80 i‡(
+ARGLIST
+.
+	`size
+() > 0) {
+
+81 
+°d
+::
+cout
+ << 
+°r
+ << "Argumenents:\n";
+
+82 
+i
+ = 0; i < ()
+ARGLIST
+.
+	`size
+() - 1; i++)
+
+83 
+°d
+::
+cout
+ << 
+°r
+ << 
+Pass
+ << 
+ARGLIST
+[
+i
+]->
+	`to_°rög
+() << "\n";
+
+85 
+°d
+::
+cout
+ << 
+°r
+ << 
+Down
+ << 
+ARGLIST
+.
+	`back
+()->
+	`to_°rög
+() << "\n";
+
+87 
+	}
+}
+
+90 
+	g°d
+::
+ve˘‹
+<
+symbﬁNode
+*> &symbﬁNode::
+	$gëArgs
+(Ë{ 
+ARGLIST
+;
+	}
+}
+
+91 
+	gsymbﬁNode
+::
+	$gëBödög
+(Ë{ 
+BINDING
+;
+	}
+}
+
+92 
+	gsymbﬁNode
+::
+	$gëCou¡
+(Ë{ 
+cou¡
+;
+	}
+}
+
+93 
+	g°d
+::
+°rög
+ 
+symbﬁNode
+::
+	$gëName
+(Ë{ 
+NAME
+;
+	}
+}
+
+94 
+symbﬁNode
+ *
+	gsymbﬁNode
+::
+	$gëNext
+(Ë{ 
+NEXT
+;
+	}
+}
+
+95 
+	gsymbﬁNode
+::
+	$gëSize
+(Ë{ 
+SIZE
+;
+	}
+}
+
+96 
+ty≥Node
+ *
+	gsymbﬁNode
+::
+	$gëTy≥
+(Ë{ 
+TYPE
+;
+	}
+}
+
+97 
+boﬁ
+ 
+	gsymbﬁNode
+::
+	$isGlobÆ
+(Ë{ 
+globÆ
+;
+	}
+}
+
+98 
+boﬁ
+ 
+	gsymbﬁNode
+::
+	$isPas£dByRe„ªn˚
+(Ë{ 
+∑s£dByRef
+;
+	}
+}
+
+101 
+	gsymbﬁNode
+::
+	$£tAsGlobÆ
+(Ë{
+globÆ
+ = 
+åue
+;
+	}
+}
+
+102 
+	gsymbﬁNode
+::
+	$£tAsPassByRe„ªn˚
+(Ë{
+∑s£dByRef
+ = 
+åue
+;
+	}
+}
+
+103 
+	gsymbﬁNode
+::
+	$£tBödög
+(
+böd
+Ë{
+BINDING
+ = böd;
+	}
+}
+
+104 
+	gsymbﬁNode
+::
+	$£tSize
+(
+size
+Ë{
+SIZE
+ = size;
+	}
+}
+
+106 
+	gsymbﬁNode
+::
+£tArgs
+(
+°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> &
+¨gli°
+) {
+
+107 
+SIZE
+ = -2;
+
+108 
+	gARGLIST
+.
+sw≠
+(
+¨gli°
+);
+
+109 
+	gsize
+ = 
+ARGLIST
+.
+size
+();
+
+110 
+	gi
+ = 0; i < 
+	gsize
+; i++)
+
+111 
+	gARGLIST
+[
+i
+]->
+£tBödög
+(ò- 2 - 
+size
+);
+
+	@symbolTable.h
+
+1 #i‚de‡
+SYMBOLTABLE_H
+
+
+2 
+	#SYMBOLTABLE_H
+
+
+	)
+
+4 
+	~"ty≥TabÀ.h
+"
+
+5 
+	~<°rög
+>
+
+6 
+	~<ve˘‹
+>
+
+7 
+	#deb
+ 
+°d
+::
+cout
+<<
+__FILE__
+<<","<<
+__LINE__
+<<"\n"
+
+	)
+
+8 
+	#vÆ
+(
+x
+Ë
+°d
+::
+cout
+<<#x"="<<x<<"\n"
+
+	)
+
+10 ˛as†
+	csymbﬁNode
+ {
+
+11 
+	m°d
+::
+°rög
+ 
+NAME
+;
+
+13 
+ty≥Node
+ *
+	mTYPE
+;
+
+15 
+	mSIZE
+;
+
+19 
+	mBINDING
+;
+
+22 
+	m°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> 
+ARGLIST
+;
+
+24 
+symbﬁNode
+ *
+	mNEXT
+;
+
+26 
+boﬁ
+ 
+	mglobÆ
+;
+
+28 
+boﬁ
+ 
+	m∑s£dByRef
+;
+
+30 
+	mcou¡
+;
+
+32 
+	mpublic
+:
+
+34 
+symbﬁNode
+(
+°d
+::
+°rög
+ 
+«me
+, 
+ty≥Node
+ *
+ty≥
+);
+
+37 ~
+symbﬁNode
+();
+
+40 
+symbﬁNode
+ *
+ö°Æl
+(
+°d
+::
+°rög
+ 
+«me
+, 
+ty≥Node
+ *
+ty≥
+, 
+size
+ = -1);
+
+41 
+symbﬁNode
+ *
+lookUp
+(
+°d
+::
+°rög
+ 
+«me
+);
+
+42 
+¥öt
+(
+°d
+::
+°rög
+ 
+°r
+ = "");
+
+43 
+	m°d
+::
+°rög
+ 
+to_°rög
+();
+
+46 
+	m°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> &
+gëArgs
+();
+
+47 
+gëBödög
+();
+
+48 
+	m°d
+::
+°rög
+ 
+gëName
+();
+
+49 
+symbﬁNode
+ *
+gëNext
+();
+
+50 
+gëSize
+();
+
+51 
+ty≥Node
+ *
+gëTy≥
+();
+
+52 
+boﬁ
+ 
+isGlobÆ
+();
+
+53 
+boﬁ
+ 
+isPas£dByRe„ªn˚
+();
+
+56 
+£tArgs
+(
+°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> &
+¨gli°
+);
+
+57 
+£tAsGlobÆ
+();
+
+58 
+£tAsPassByRe„ªn˚
+();
+
+59 
+£tBödög
+(
+böd
+);
+
+60 
+£tSize
+(
+size
+);
+
+63 
+gëCou¡
+();
+
+	@syntaxTree.cpp
+
+1 
+	~<io°ªam
+>
+
+2 
+	~<ve˘‹
+>
+
+3 
+	~<°ack
+>
+
+4 
+	~<cm©h
+>
+
+5 
+	~<Æg‹ôhm
+>
+
+6 
+	~<c°dio
+>
+
+7 
+	~"sy¡axTªe.h
+"
+
+8 
+	~"compûî.hµ
+"
+
+9 
+	~"utû.h
+"
+
+11 #ifde‡
+__löux__
+
+
+12 
+	gÀ·Up
+[] = {'\t', 0};
+
+13 
+	gÀ·Down
+[] = "\xe2\x94\x82\t";
+
+14 
+	grightUp
+[] = "\xe2\x94\x82\t";
+
+15 
+	grightDown
+[] = {'\t', 0};
+
+16 
+	gUp
+[] = "\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80";
+
+17 
+	gDown
+[] = "\xe2\x94\x94\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80";
+
+18 
+	gPass
+[] = "\xe2\x94\x9c\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80";
+
+19 #ñi‡
+_WIN32
+
+
+20 
+	gÀ·Up
+[] = {'\t', 0};
+
+21 
+	gÀ·Down
+[] = { -77, '\t', 0};
+
+22 
+	grightUp
+[] = { -77, '\t', 0};
+
+23 
+	grightDown
+[] = {'\t', 0};
+
+24 
+	gUp
+[] = { -38, -60, -60, -60, -60, -60, -60, -60, 0};
+
+25 
+	gDown
+[] = { -64, -60, -60, -60, -60, -60, -60, -60, 0};
+
+26 
+	gPass
+[] = { -61, -60, -60, -60, -60, -60, -60, -60, 0};
+
+30 
+	gSNode
+::
+cou¡
+ = 0;
+
+32 
+	gSNode
+::
+	$öô
+() {
+
+33 
+NODETYPE
+ = 
+löeNo
+ = 
+cﬁNo
+ = -1;
+
+34 
+VALUE
+ = 0;
+
+35 
+TYPE
+ = 
+nuŒ±r
+;
+
+36 
+PTR1
+ = 
+PTR2
+ = 
+PTR3
+ = 
+√xt
+ = 
+nuŒ±r
+;
+
+37 
+èbÀ
+ = 
+íåy
+ = 
+nuŒ±r
+;
+
+38 
+NAME
+ = "";
+
+39 
+	}
+}
+
+41 
+	gSNode
+::
+	$SNode
+(
+nodëy≥
+, 
+l
+, 
+c
+) {
+
+42 
+	`öô
+();
+
+43 
+NODETYPE
+ = 
+nodëy≥
+;
+
+44 
+cou¡
+++;
+
+45 
+löeNo
+ = 
+l
+;
+
+46 
+cﬁNo
+ = 
+c
+;
+
+48 
+	}
+}
+
+50 
+	gSNode
+::
+	$SNode
+(
+nodëy≥
+, 
+vÆue
+, 
+l
+, 
+c
+) {
+
+51 
+	`öô
+();
+
+52 
+NODETYPE
+ = 
+nodëy≥
+;
+
+53 
+VALUE
+ = 
+vÆue
+;
+
+54 
+NAME
+ = 
+°d
+::
+	`to_°rög
+(
+vÆue
+);
+
+55 
+cou¡
+++;
+
+56 
+löeNo
+ = 
+l
+;
+
+57 
+cﬁNo
+ = 
+c
+;
+
+59 
+	}
+}
+
+61 
+	gSNode
+::
+	$SNode
+(
+nodëy≥
+, c⁄° 
+°d
+::
+°rög
+ &
+«me
+, 
+l
+, 
+c
+) {
+
+62 
+	`öô
+();
+
+63 
+NODETYPE
+ = 
+nodëy≥
+;
+
+64 
+NAME
+ = 
+«me
+;
+
+65 
+cou¡
+++;
+
+66 
+löeNo
+ = 
+l
+;
+
+67 
+cﬁNo
+ = 
+c
+;
+
+69 
+	}
+}
+
+71 
+	gSNode
+::~
+	$SNode
+() {
+
+73 i‡(
+PTR1
+Ë
+dñëe
+ PTR1;
+
+74 i‡(
+PTR2
+Ë
+dñëe
+ PTR2;
+
+75 i‡(
+PTR3
+Ë
+dñëe
+ PTR3;
+
+76 i‡(
+√xt
+Ë
+dñëe
+Çext;
+
+77 i‡(
+NODETYPE
+ =
+FUNC
+ && 
+èbÀ
+Ë
+dñëe
+Åable;
+
+78 
+SNode
+ *
+i
+ : 
+ARGLIST
+)
+
+79 i‡(
+i
+ !
+nuŒ±r
+)
+
+80 
+dñëe
+ 
+i
+;
+
+81 
+cou¡
+--;
+
+82 
+	}
+}
+
+85 
+SNode
+ *
+	gSNode
+::
+	$gëPTR1
+(Ë{ 
+PTR1
+;
+	}
+}
+
+86 
+SNode
+ *
+	gSNode
+::
+	$gëPTR2
+(Ë{ 
+PTR2
+;
+	}
+}
+
+87 
+SNode
+ *
+	gSNode
+::
+	$gëPTR3
+(Ë{ 
+PTR3
+;
+	}
+}
+
+88 
+SNode
+ *
+	gSNode
+::
+	$gëNext
+(Ë{ 
+√xt
+;
+	}
+}
+
+89 
+	g°d
+::
+ve˘‹
+<
+SNode
+ *> &SNode::
+	$gëArgs
+(Ë{ 
+ARGLIST
+;
+	}
+}
+
+91 
+symbﬁNode
+ *
+	gSNode
+::
+	$gëTabÀ
+(Ë{ 
+èbÀ
+;
+	}
+}
+
+92 
+symbﬁNode
+ *
+	gSNode
+::
+	$gëE¡ry
+(Ë{ 
+íåy
+;
+	}
+}
+
+94 
+	gSNode
+::
+	$gëNodeTy≥
+(Ë{ 
+NODETYPE
+;
+	}
+}
+
+95 
+ty≥Node
+ *
+	gSNode
+::
+	$gëRëu∫Ty≥
+(Ë{ 
+TYPE
+;
+	}
+}
+
+97 
+	gSNode
+::
+	$gëVÆue
+(Ë{ 
+VALUE
+;
+	}
+}
+
+98 
+	g°d
+::
+°rög
+ 
+SNode
+::
+	$gëName
+(Ë{ 
+NAME
+;
+	}
+}
+
+100 
+	gSNode
+::
+	$gëCou¡
+(Ë{ 
+cou¡
+;
+	}
+}
+
+104 
+	gSNode
+::
+	$£tPTR1
+(
+SNode
+ *
+±r
+Ë{
+PTR1
+ =Öå;
+	}
+}
+
+105 
+	gSNode
+::
+	$£tPTR2
+(
+SNode
+ *
+±r
+Ë{
+PTR2
+ =Öå;
+	}
+}
+
+106 
+	gSNode
+::
+	$£tPTR3
+(
+SNode
+ *
+±r
+Ë{
+PTR3
+ =Öå;
+	}
+}
+
+107 
+	gSNode
+::
+	$£tNext
+(
+SNode
+ *
+±r
+Ë{
+√xt
+ =Öå;
+	}
+}
+
+108 
+	gSNode
+::
+£tArgs
+(
+°d
+::
+ve˘‹
+<
+SNode
+ *> &
+¨gli°
+Ë{
+ARGLIST
+.
+sw≠
+(arglist);}
+
+110 
+	gSNode
+::
+	$£tTabÀ
+(
+symbﬁNode
+ *
+±r
+Ë{
+èbÀ
+ =Öå;
+	}
+}
+
+111 
+	gSNode
+::
+	$£tE¡ry
+(
+symbﬁNode
+ *
+±r
+Ë{
+íåy
+ =Öå;
+	}
+}
+
+113 
+	gSNode
+::
+	$£tRëu∫Ty≥
+(
+ty≥Node
+ *
+ty≥
+Ë{
+TYPE
+ =Åy≥;
+	}
+}
+
+114 
+	gSNode
+::
+	$£tNodeTy≥
+(
+ty≥
+Ë{
+NODETYPE
+ =Åy≥;
+	}
+}
+
+116 
+	g°d
+::
+°rög
+ 
+SNode
+::
+	$to_°rög
+() {
+
+117 
+°d
+::
+°rög
+ 
+°r
+;
+
+118 i‡(
+NODETYPE
+ =
+ID
+)
+
+119 i‡(
+íåy
+ !
+nuŒ±r
+)
+
+120 
+°r
+ = "<ID," + 
+°d
+::
+	`to_°rög
+(()
+íåy
+Ë+ "," + 
+NAME
+;
+
+122 
+°r
+ = "<ID," + 
+NAME
+;
+
+123 i‡(
+NODETYPE
+ =
+FUNC
+)
+
+124 
+°r
+ = "<FUNC," + 
+NAME
+;
+
+125 i‡(
+NODETYPE
+ =
+NUM
+)
+
+126 
+°r
+ = "<NUM," + 
+°d
+::
+	`to_°rög
+(
+VALUE
+);
+
+127 i‡(
+NODETYPE
+ =
+READ
+)
+
+128 
+°r
+ = "<read";
+
+129 i‡(
+NODETYPE
+ =
+START
+)
+
+130 
+°r
+ = "<start";
+
+131 i‡(
+NODETYPE
+ =
+END
+)
+
+132 
+°r
+ = "<end";
+
+133 i‡(
+NODETYPE
+ =
+WRITE
+)
+
+134 
+°r
+ = "<write";
+
+135 i‡(
+NODETYPE
+ =
+IF
+)
+
+136 
+°r
+ = "<if";
+
+137 i‡(
+NODETYPE
+ =
+THEN
+)
+
+138 
+°r
+ = "<then";
+
+139 i‡(
+NODETYPE
+ =
+ENDIF
+)
+
+140 
+°r
+ = "<endif";
+
+141 i‡(
+NODETYPE
+ =
+WHILE
+)
+
+142 
+°r
+ = "<while";
+
+143 i‡(
+NODETYPE
+ =
+DO
+)
+
+144 
+°r
+ = "<do";
+
+145 i‡(
+NODETYPE
+ =
+ENDWHILE
+)
+
+146 
+°r
+ = "<endwhile";
+
+147 i‡(
+NODETYPE
+ =
+STARTDECL
+)
+
+148 
+°r
+ = "<decl";
+
+149 i‡(
+NODETYPE
+ =
+ENDDECL
+)
+
+150 
+°r
+ = "<enddecl";
+
+151 i‡(
+NODETYPE
+ =
+RETURN
+)
+
+152 
+°r
+ = "<return";
+
+153 i‡(
+NODETYPE
+ =
+ISEQ
+)
+
+154 
+°r
+ = "<==";
+
+155 i‡(
+NODETYPE
+ =
+NOTEQ
+)
+
+156 
+°r
+ = "<!=";
+
+157 i‡(
+NODETYPE
+ =
+INTEGER
+)
+
+158 
+°r
+ = "<int";
+
+159 i‡(
+NODETYPE
+ =
+BOOLEAN
+)
+
+160 
+°r
+ = "<bool";
+
+161 i‡(
+NODETYPE
+ =
+FALSE
+)
+
+162 
+°r
+ = "<false";
+
+163 i‡(
+NODETYPE
+ =
+TRUE
+)
+
+164 
+°r
+ = "<true";
+
+165 
+°r
+ = "<OP," + 
+°d
+::
+	`°rög
+(1, ()
+NODETYPE
+);
+
+166 if(
+TYPE
+)
+
+167 
+°r
+ +","+
+TYPE
+->
+	`gëTy≥Name
+();
+
+168  
+°r
+ + ">";
+
+169 
+	}
+}
+
+171 
+	gSNode
+::
+	$¥öt
+() {
+
+172 i‡(
+èbÀ
+ !
+nuŒ±r
+) {
+
+173 
+èbÀ
+->
+	`¥öt
+();
+
+175 
+°d
+::
+cout
+ << "Code\n";
+
+176 
+	`¥öt
+(
+this
+->
+√xt
+, "", 0);
+
+177 
+	}
+}
+
+179 
+	gSNode
+::
+	$¥ötNode
+(
+SNode
+ *
+i
+, 
+°d
+::
+°rög
+ 
+°r1
+, std::°rög 
+°r2
+, std::°rög 
+°r3
+) {
+
+180 
+	`¥öt
+(
+i
+->
+PTR1
+, 
+°r1
+, 1);
+
+181 
+°d
+::
+cout
+ << 
+°r2
+ << 
+i
+->
+	`to_°rög
+() << "\n";
+
+182 autÿ
+¨g
+ : 
+i
+->
+ARGLIST
+)
+
+183 
+	`¥öt
+(
+¨g
+, 
+°r3
+, 0);
+
+184 i‡(
+i
+->
+NODETYPE
+ =
+FUNC
+) {
+
+185 i‡(
+i
+->
+èbÀ
+) {
+
+186 
+i
+->
+èbÀ
+->
+	`¥öt
+(
+°r3
+ + "\t");
+
+188 i‡(
+i
+->
+íåy
+ && i->íåy->
+	`gëArgs
+().
+	`size
+() > 0) {
+
+189 
+°d
+::
+cout
+ << 
+°r3
+ << "\tArguments:\n";
+
+190 
+symbﬁNode
+ *
+¨g
+ : 
+i
+->
+íåy
+->
+	`gëArgs
+())
+
+191 
+°d
+::
+cout
+ << 
+°r3
+ + "\t" + 
+Down
+ << 
+¨g
+->
+	`to_°rög
+() << "\n";
+
+193 
+°d
+::
+cout
+ << 
+°r3
+ << "Func Code:\n";
+
+194 
+	`¥öt
+(
+i
+->
+PTR2
+, 
+°r3
+ + "\t", 0);
+
+195 
+	`¥öt
+(
+i
+->
+PTR3
+, 
+°r3
+ + "\t", 0);
+
+198 
+	`¥öt
+(
+i
+->
+PTR2
+, 
+°r3
+, 0);
+
+199 
+	`¥öt
+(
+i
+->
+PTR3
+, 
+°r3
+, 0);
+
+201 
+	}
+}
+
+203 
+	gSNode
+::
+	$¥öt
+(
+SNode
+ *
+x
+, 
+°d
+::
+°rög
+ 
+°r
+, 
+side
+) {
+
+204 i‡(
+x
+ =
+nuŒ±r
+)
+
+206 
+SNode
+ *
+i
+ = 
+x
+; i !
+nuŒ±r
+; i = i->
+√xt
+) {
+
+207 i‡(
+i
+->
+√xt
+ !
+nuŒ±r
+)
+
+208 
+	`¥ötNode
+(
+i
+, 
+°r
+ + 
+À·Down
+, så + 
+Pass
+, str +ÜeftDown);
+
+209 i‡(
+side
+ % 2)
+
+210 
+	`¥ötNode
+(
+i
+, 
+°r
+ + "\t", så + 
+Up
+, så + 
+À·Down
+);
+
+212 
+	`¥ötNode
+(
+i
+, 
+°r
+ + 
+À·Down
+, så + 
+Down
+, str + "\t");
+
+214 
+	}
+}
+
+216 
+	gSNode
+::
+	$ty≥Check
+() {
+
+217 
+check
+ = 
+PASS
+;
+
+218 
+SNode
+ *
+i
+ = 
+this
+; i !
+nuŒ±r
+; i = i->
+√xt
+) {
+
+219 
+check
+ = 
+°d
+::
+	`mö
+(check, 
+	`ty≥Check
+(
+i
+));
+
+221  
+check
+;
+
+222 
+	}
+}
+
+223 
+	gSNode
+::
+	$ty≥Check
+(
+SNode
+ *
+x
+) {
+
+225 
+x
+->
+NODETYPE
+) {
+
+230 
+ID
+: {
+
+231 
+symbﬁNode
+ *
+íåy
+ = 
+x
+->
+	`gëE¡ry
+();
+
+233 
+	`gëUßgeTy≥
+(
+íåy
+)) {
+
+234 
+FUNCTION
+: {
+
+235 
+size
+ = 
+x
+->
+	`gëArgs
+().
+	`size
+();
+
+236 
+check
+ = 
+PASS
+;
+
+237 
+i
+ = 0; i < 
+size
+; i++) {
+
+238 
+SNode
+ *
+a˘uÆArg
+ = 
+x
+->
+	`gëArgs
+()[
+i
+];
+
+239 
+symbﬁNode
+ *
+f‹mÆArg
+ = 
+íåy
+->
+	`gëArgs
+()[
+i
+];
+
+240 
+check
+ = 
+°d
+::
+	`mö
+(check, 
+	`ty≥Check
+(
+a˘uÆArg
+));
+
+241 i‡(
+a˘uÆArg
+->
+	`gëRëu∫Ty≥
+(Ë!
+f‹mÆArg
+->
+	`gëTy≥
+() && formalArg->getType()) {
+
+242 
+	`îr‹
+("Mism©ch i¿ArgumíàTy≥áà" + 
+°d
+::
+	`to_°rög
+(
+i
+ + 1Ë+ "thárgumít\n\tTy≥ De˛¨ed:" + 
+f‹mÆArg
+->
+	`gëTy≥
+()->
+	`gëTy≥Name
+(Ë+ "\tTy≥ Pas£d:" + 
+a˘uÆArg
+->
+	`gëRëu∫Ty≥
+()->gëTy≥Name(),á˘uÆArg->
+löeNo
+,á˘uÆArg->
+cﬁNo
+);
+
+243  
+FAIL
+;
+
+245 i‡(
+f‹mÆArg
+->
+	`isPas£dByRe„ªn˚
+(Ë&& (
+a˘uÆArg
+->
+	`gëNodeTy≥
+(Ë!
+ID
+ || 
+	`gëUßgeTy≥
+◊˘uÆArg->
+	`gëE¡ry
+()Ë=
+FUNCTION
+)) {
+
+246 
+	`îr‹
+("ArgumíàDe˛¨edÅÿbêPas£d by Re„ªn˚, InvÆid ArgumíàPas£d", 
+a˘uÆArg
+->
+löeNo
+,á˘uÆArg->
+cﬁNo
+);
+
+247  
+FAIL
+;
+
+250  
+check
+;
+
+253 
+ARRAY
+: {
+
+254 
+check
+ = 
+	`ty≥Check
+(
+x
+->
+	`gëPTR1
+());
+
+255 i‡(
+x
+->
+	`gëPTR1
+()->
+	`gëRëu∫Ty≥
+(Ë!
+öãgî
+) {
+
+256 
+	`îr‹
+("Index ha†tÿbêöãgî", 
+x
+->
+löeNo
+, x->
+cﬁNo
+);
+
+257  
+FAIL
+;
+
+260  
+check
+;
+
+263 
+VARIABLE
+: {
+
+264  
+PASS
+;
+
+267 :  
+FAIL
+;
+
+270 
+READ
+: {
+
+271 
+SNode
+ *
+y
+ = 
+x
+->
+	`gëPTR2
+();
+
+272 i‡(
+y
+->
+	`gëRëu∫Ty≥
+(Ë!
+öãgî
+) {
+
+273 
+	`îr‹
+("O∆y I¡egî C™ bêRód", 
+y
+->
+löeNo
+, y->
+cﬁNo
+);
+
+274  
+FAIL
+;
+
+276 i‡(
+y
+->
+	`gëPTR1
+(Ë=
+nuŒ±r
+)
+
+277  
+PASS
+;
+
+279 
+check
+ = 
+	`ty≥Check
+(
+y
+->
+	`gëPTR1
+());
+
+280 i‡(
+y
+->
+	`gëPTR1
+()->
+	`gëRëu∫Ty≥
+(Ë!
+öãgî
+) {
+
+281 
+	`îr‹
+("Index ha†tÿbêöãgî", 
+y
+->
+löeNo
+, y->
+cﬁNo
+);
+
+282  
+FAIL
+;
+
+285  
+check
+;
+
+290 
+SNode
+ *
+X
+ = 
+x
+->
+	`gëPTR1
+();
+
+291 
+SNode
+ *
+Y
+ = 
+x
+->
+	`gëPTR2
+();
+
+292 
+check1
+ = 
+	`ty≥Check
+(
+X
+);
+
+293 
+check2
+ = 
+	`ty≥Check
+(
+Y
+);
+
+294 i‡(
+X
+->
+	`gëRëu∫Ty≥
+(Ë!
+Y
+->getReturnType() && Y->getReturnType()) {
+
+295 
+°d
+::
+°rög
+ 
+«me
+ = 
+X
+->
+	`gëName
+();
+
+296 
+SNode
+ *
+i
+ = 
+X
+->
+	`gëPTR2
+(); i; i = i->getPTR2())
+
+297 
+«me
+.
+	`≠≥nd
+("." + 
+i
+->
+	`gëName
+());
+
+298 
+	`îr‹
+("'" + 
+«me
+ + "' i†o‡ty≥ '"+
+X
+->
+	`gëRëu∫Ty≥
+()->
+	`gëTy≥Name
+()+"', Assignög "+
+Y
+->
+	`gëName
+()+" ("+Y->gëRëu∫Ty≥()->gëTy≥Name()+")", Y->
+löeNo
+, Y->
+cﬁNo
+);
+
+299  
+FAIL
+;
+
+301  
+°d
+::
+	`mö
+(
+check1
+, 
+check2
+);
+
+309 
+WRITE
+: {
+
+310 
+check
+ = 
+	`ty≥Check
+(
+x
+->
+	`gëPTR2
+());
+
+311 i‡(
+x
+->
+	`gëPTR2
+()->
+	`gëRëu∫Ty≥
+(Ë!
+öãgî
+) {
+
+312 
+	`îr‹
+("O∆y I¡egî VÆue†ˇ¿bê¥öãd", 
+x
+->
+löeNo
+, x->
+cﬁNo
+);
+
+313  
+FAIL
+;
+
+315  
+check
+;
+
+318 
+IF
+: {
+
+319 
+check
+ = 
+	`ty≥Check
+(
+x
+->
+	`gëPTR1
+());
+
+320 i‡(
+x
+->
+	`gëPTR1
+()->
+	`gëRëu∫Ty≥
+(Ë!
+boﬁón
+) {
+
+321 
+	`îr‹
+("C⁄dôi⁄ should bê®Logiˇ»Ex¥essi⁄", 
+x
+->
+löeNo
+, x->
+cﬁNo
+);
+
+322  
+FAIL
+;
+
+324 if(
+x
+->
+	`gëPTR2
+())
+
+325 
+check
+ = 
+°d
+::
+	`mö
+(check, 
+x
+->
+	`gëPTR2
+()->
+	`ty≥Check
+());
+
+326 if(
+x
+->
+	`gëPTR3
+())
+
+327 
+check
+ = 
+°d
+::
+	`mö
+(check, 
+x
+->
+	`gëPTR3
+()->
+	`ty≥Check
+());
+
+328  
+check
+;
+
+331 
+WHILE
+: {
+
+332 
+check
+ = 
+	`ty≥Check
+(
+x
+->
+	`gëPTR1
+());
+
+333 i‡(
+x
+->
+	`gëPTR1
+()->
+	`gëRëu∫Ty≥
+(Ë!
+boﬁón
+) {
+
+334 
+	`îr‹
+("C⁄dôi⁄ should bê®Logiˇ»Ex¥essi⁄", 
+x
+->
+löeNo
+, x->
+cﬁNo
+);
+
+335  
+FAIL
+;
+
+337 if(
+x
+->
+	`gëPTR2
+())
+
+338 
+check
+ = 
+°d
+::
+	`mö
+(check, 
+x
+->
+	`gëPTR2
+()->
+	`ty≥Check
+());
+
+339  
+check
+;
+
+342 
+START
+:
+
+343  
+PASS
+;
+
+345 
+FUNC
+: {
+
+346  
+x
+->
+	`gëPTR2
+()->
+	`ty≥Check
+();
+
+349 
+RETURN
+: {
+
+350 
+check
+ = 
+	`ty≥Check
+(
+x
+->
+	`gëPTR2
+());
+
+351 i‡(
+x
+->
+	`gëPTR2
+()->
+	`gëRëu∫Ty≥
+() != x->getReturnType()) {
+
+352 
+	`îr‹
+("Mism©ch i¿ªtu∫ VÆuêTy≥", 
+x
+->
+	`gëPTR2
+()->
+löeNo
+, x->gëPTR2()->
+cﬁNo
+);
+
+353  
+FAIL
+;
+
+355  
+check
+;
+
+362 
+NUM
+:
+
+363  
+PASS
+;
+
+364 
+TRUE
+:
+
+365  
+PASS
+;
+
+366 
+FALSE
+:
+
+367  
+PASS
+;
+
+379 
+LEQ
+:
+
+380 
+GEQ
+:
+
+381 
+ISEQ
+:
+
+382 
+NOTEQ
+: {
+
+383 
+SNode
+ *
+X
+ = 
+x
+->
+	`gëPTR1
+();
+
+384 
+SNode
+ *
+Y
+ = 
+x
+->
+	`gëPTR2
+();
+
+385 
+check1
+ = 
+	`ty≥Check
+(
+X
+);
+
+386 
+check2
+ = 
+	`ty≥Check
+(
+Y
+);
+
+387 i‡(
+X
+->
+	`gëRëu∫Ty≥
+(Ë=
+boﬁón
+) {
+
+388 
+	`îr‹
+("'" + 
+X
+->
+	`gëName
+(Ë+ "' i†o‡ty≥ Boﬁón,Çìded I¡egî", X->
+löeNo
+, X->
+cﬁNo
+);
+
+389  
+FAIL
+;
+
+391 i‡(
+Y
+->
+	`gëRëu∫Ty≥
+(Ë=
+boﬁón
+) {
+
+392 
+	`îr‹
+("'" + 
+Y
+->
+	`gëName
+(Ë+ "' i†o‡ty≥ Boﬁón,Çìded I¡egî", Y->
+löeNo
+, Y->
+cﬁNo
+);
+
+393  
+FAIL
+;
+
+395  
+°d
+::
+	`mö
+(
+check1
+, 
+check2
+);
+
+397 
+AND
+:
+
+398 
+OR
+: {
+
+399 
+SNode
+ *
+X
+ = 
+x
+->
+	`gëPTR1
+();
+
+400 
+SNode
+ *
+Y
+ = 
+x
+->
+	`gëPTR2
+();
+
+401 
+check1
+ = 
+	`ty≥Check
+(
+X
+);
+
+402 
+check2
+ = 
+	`ty≥Check
+(
+Y
+);
+
+403 i‡(
+X
+->
+	`gëRëu∫Ty≥
+(Ë=
+öãgî
+) {
+
+404 
+	`îr‹
+("'" + 
+X
+->
+	`gëName
+(Ë+ "' i†o‡ty≥ I¡egî,Çìded Boﬁón", X->
+löeNo
+, X->
+cﬁNo
+);
+
+405  
+FAIL
+;
+
+407 i‡(
+Y
+->
+	`gëRëu∫Ty≥
+(Ë=
+öãgî
+) {
+
+408 
+	`îr‹
+("'" + 
+Y
+->
+	`gëName
+(Ë+ "' i†o‡ty≥ I¡egî,Çìded Boﬁón", Y->
+löeNo
+, Y->
+cﬁNo
+);
+
+409  
+FAIL
+;
+
+411  
+°d
+::
+	`mö
+(
+check1
+, 
+check2
+);;
+
+413 
+NOT
+: {
+
+414 
+check
+ = 
+	`ty≥Check
+(
+x
+->
+	`gëPTR1
+());
+
+415 i‡(
+x
+->
+	`gëPTR1
+()->
+	`gëRëu∫Ty≥
+(Ë=
+öãgî
+) {
+
+416 
+	`îr‹
+("'" + 
+x
+->
+	`gëPTR1
+()->
+	`gëName
+(Ë+ "' i†o‡ty≥ I¡egî,Çìded Boﬁón", x->
+löeNo
+, x->
+cﬁNo
+);
+
+417  
+FAIL
+;
+
+419  
+check
+;
+
+422  
+PASS
+;
+
+423 
+	}
+}
+
+	@syntaxTree.h
+
+1 #i‚de‡
+SYNTAXTREE_H
+
+
+2 
+	#SYNTAXTREE_H
+
+
+	)
+
+4 
+	~"symbﬁTabÀ.h
+"
+
+5 
+	~<°rög
+>
+
+7 
+	#PASS
+ 2
+
+	)
+
+8 
+	#WARN
+ 1
+
+	)
+
+9 
+	#FAIL
+ 0
+
+	)
+
+11 ˛as†
+	cSNode
+ {
+
+12 
+	mNODETYPE
+;
+
+15 
+ty≥Node
+ *
+	mTYPE
+;
+
+17 
+	m°d
+::
+°rög
+ 
+NAME
+;
+
+19 
+	mVALUE
+;
+
+21 
+	m°d
+::
+ve˘‹
+<
+SNode
+ *> 
+ARGLIST
+;
+
+23 
+SNode
+ *
+	mPTR1
+, *
+	mPTR2
+, *
+	mPTR3
+;
+
+24 
+SNode
+ *
+	m√xt
+;
+
+26 
+symbﬁNode
+ *
+	mèbÀ
+;
+
+27 
+symbﬁNode
+ *
+	míåy
+;
+
+29 
+	mcou¡
+;
+
+31 
+öô
+();
+
+33 
+¥ötNode
+(
+SNode
+ *
+i
+, 
+°d
+::
+°rög
+ 
+°r1
+, std::°rög 
+°r2
+, std::°rög 
+°r3
+);
+
+34 
+ty≥Check
+(
+SNode
+ *);
+
+35 
+	mpublic
+:
+
+36 
+¥öt
+(
+SNode
+ *
+b°
+, 
+°d
+::
+°rög
+ 
+°r
+, 
+side
+);
+
+37 
+	mlöeNo
+;
+
+38 
+	mcﬁNo
+;
+
+41 
+SNode
+(
+nodëy≥
+, 
+l
+, 
+c
+);
+
+42 
+SNode
+(
+nodëy≥
+, 
+vÆue
+, 
+l
+, 
+c
+);
+
+43 
+SNode
+(
+nodëy≥
+, c⁄° 
+°d
+::
+°rög
+ &
+«me
+, 
+l
+, 
+c
+);
+
+46 ~
+SNode
+();
+
+49 
+¥öt
+();
+
+50 
+	m°d
+::
+°rög
+ 
+to_°rög
+();
+
+51 
+ty≥Check
+();
+
+54 
+	m°d
+::
+°rög
+ 
+gëName
+();
+
+55 
+gëVÆue
+();
+
+56 
+SNode
+ *
+gëPTR1
+();
+
+57 
+SNode
+ *
+gëPTR2
+();
+
+58 
+SNode
+ *
+gëPTR3
+();
+
+59 
+SNode
+ *
+gëNext
+();
+
+60 
+	m°d
+::
+ve˘‹
+<
+SNode
+ *> &
+gëArgs
+();
+
+61 
+symbﬁNode
+ *
+gëE¡ry
+();
+
+62 
+symbﬁNode
+ *
+gëTabÀ
+();
+
+63 
+gëNodeTy≥
+();
+
+64 
+ty≥Node
+ *
+gëRëu∫Ty≥
+();
+
+68 
+£tPTR1
+(
+SNode
+ *
+±r
+);
+
+69 
+£tPTR2
+(
+SNode
+ *
+±r
+);
+
+70 
+£tPTR3
+(
+SNode
+ *
+±r
+);
+
+71 
+£tNext
+(
+SNode
+ *
+±r
+);
+
+72 
+£tArgs
+(
+°d
+::
+ve˘‹
+<
+SNode
+ *> &
+¨gli°
+);
+
+73 
+£tTabÀ
+(
+symbﬁNode
+ *
+±r
+);
+
+74 
+£tE¡ry
+(
+symbﬁNode
+ *
+±r
+);
+
+75 
+£tRëu∫Ty≥
+(
+ty≥Node
+ *
+ty≥
+);
+
+76 
+£tNodeTy≥
+(
+nodëy≥
+);
+
+80 
+gëCou¡
+();
+
+83 
+	#YYSTYPE
+ 
+SNode
+*
+
+	)
+
+	@typeTable.cpp
+
+1 
+	~"ty≥TabÀ.h
+"
+
+2 
+	~<io°ªam
+>
+
+3 
+	gty≥Node
+::
+cou¡
+ = 0;
+
+4 
+	gty≥Node
+::
+	$ty≥Node
+(
+°d
+::
+°rög
+ 
+«me
+) {
+
+5 
+TYPE_NAME
+ = 
+«me
+;
+
+6 
+ENTRY
+ = 
+nuŒ±r
+;
+
+7 
+NEXT
+ = 
+nuŒ±r
+;
+
+8 
+INDEX
+ = -1;
+
+9 
+	}
+}
+
+12 
+	gty≥Node
+::~
+	$ty≥Node
+() {
+
+13 i‡(
+isDeföôi⁄
+)
+
+14 
+dñëe
+ 
+ENTRY
+;
+
+15 
+	}
+}
+
+18 
+ty≥Node
+ *
+	gty≥Node
+::
+	$ö°Æl
+(
+°d
+::
+°rög
+ 
+«me
+, 
+ty≥Node
+ *
+°ru˘uª
+) {
+
+19 
+ty≥Node
+ *
+œ°
+ = 
+this
+;
+
+20 
+ty≥Node
+ *
+i
+ = 
+this
+->
+NEXT
+; i !
+nuŒ±r
+; i = i->NEXT) {
+
+21 i‡(
+«me
+.
+	`com∑ª
+(
+i
+->
+TYPE_NAME
+) == 0)
+
+22  
+nuŒ±r
+;
+
+23 
+œ°
+ = 
+i
+;
+
+25 
+ty≥Node
+ *
+ãmp
+ = 
+√w
+ 
+	`ty≥Node
+(
+«me
+);
+
+26 
+ãmp
+->
+ENTRY
+ = 
+°ru˘uª
+;
+
+27 
+ãmp
+->
+isDeföôi⁄
+ = 
+åue
+;
+
+28 
+œ°
+->
+NEXT
+ = 
+ãmp
+;
+
+29  
+ãmp
+;
+
+30 
+	}
+}
+
+31 
+ty≥Node
+ *
+	gty≥Node
+::
+	$lookUp
+(
+°d
+::
+°rög
+ 
+«me
+) {
+
+32 
+ty≥Node
+ *
+i
+ = 
+this
+; i !
+nuŒ±r
+; i = i->
+NEXT
+) {
+
+33 i‡(
+«me
+.
+	`com∑ª
+(
+i
+->
+TYPE_NAME
+) == 0)
+
+34  
+i
+;
+
+36  
+nuŒ±r
+;
+
+37 
+	}
+}
+
+38 
+	gty≥Node
+::
+	$¥öt
+() {
+
+39 
+°d
+::
+cout
+ << "Valid Data Types:\n";
+
+40 
+ty≥Node
+ *
+i
+ = 
+this
+; i !
+nuŒ±r
+; i = i->
+NEXT
+) {
+
+41 
+°d
+::
+cout
+ <<
+i
+<<":"<<i->
+TYPE_NAME
+;
+
+42 i‡(
+i
+->
+ENTRY
+) {
+
+43 
+°d
+::
+cout
+ << ":\t{";
+
+44 
+ty≥Node
+ *
+j
+ = 
+i
+->
+ENTRY
+; j !
+nuŒ±r
+; j = j->
+NEXT
+)
+
+45 
+°d
+::
+cout
+ <<
+j
+<<":"<<j->
+INDEX
+<<":("<< j->
+ENTRY
+<<":"<<j->ENTRY->
+TYPE_NAME
+ << "Ë" << j->TYPE_NAME << ((j->
+NEXT
+) ? ',' : '}');
+
+47 
+°d
+::
+cout
+ << '\n';
+
+49 
+	}
+}
+
+52 
+	g°d
+::
+°rög
+ 
+ty≥Node
+::
+	$gëTy≥Name
+(Ë{ 
+TYPE_NAME
+;
+	}
+}
+
+53 
+ty≥Node
+ *
+	gty≥Node
+::
+	$gëNext
+(Ë{ 
+NEXT
+;
+	}
+}
+
+54 
+ty≥Node
+ *
+	gty≥Node
+::
+	$gëE¡ry
+(Ë{ 
+ENTRY
+;
+	}
+}
+
+55 
+	gty≥Node
+::
+	$gëIndex
+(Ë{ 
+INDEX
+;
+	}
+}
+
+58 
+	gty≥Node
+::
+	$£tNext
+(
+ty≥Node
+ *
+√xt
+Ë{
+NEXT
+ =Çext;
+	}
+}
+
+59 
+	gty≥Node
+::
+	$£tE¡ry
+(
+ty≥Node
+ *
+íåy
+Ë{
+ENTRY
+ =É¡ry;
+	}
+}
+
+60 
+	gty≥Node
+::
+	$£tIndex
+(
+ödex
+Ë{
+INDEX
+ = index;
+	}
+}
+
+63 
+	gty≥Node
+::
+	$gëCou¡
+(Ë{ 
+cou¡
+;
+	}
+}
+
+	@typeTable.h
+
+1 #i‚de‡
+TYPETABLE_H
+
+
+2 
+	#TYPETABLE_H
+
+
+	)
+
+4 
+	~<°rög
+>
+
+6 
+	#deb
+ 
+°d
+::
+cout
+<<
+__FILE__
+<<","<<
+__LINE__
+<<"\n"
+
+	)
+
+7 
+	#vÆ
+(
+x
+Ë
+°d
+::
+cout
+<<#x"="<<x<<"\n"
+
+	)
+
+10 ˛as†
+	cty≥Node
+ {
+
+11 
+	m°d
+::
+°rög
+ 
+TYPE_NAME
+;
+
+12 
+ty≥Node
+ *
+	mENTRY
+;
+
+13 
+ty≥Node
+ *
+	mNEXT
+;
+
+14 
+boﬁ
+ 
+	misDeföôi⁄
+;
+
+15 
+	mINDEX
+;
+
+16 
+	mcou¡
+;
+
+17 
+	mpublic
+:
+
+19 
+ty≥Node
+(
+°d
+::
+°rög
+ 
+«me
+);
+
+22 ~
+ty≥Node
+();
+
+25 
+ty≥Node
+ *
+ö°Æl
+(
+°d
+::
+°rög
+ 
+«me
+,Åy≥Nodê*
+°ru˘uª
+);
+
+26 
+ty≥Node
+ *
+lookUp
+(
+°d
+::
+°rög
+ 
+«me
+);
+
+27 
+¥öt
+();
+
+30 
+	m°d
+::
+°rög
+ 
+gëTy≥Name
+();
+
+31 
+ty≥Node
+ *
+gëNext
+();
+
+32 
+ty≥Node
+ *
+gëE¡ry
+();
+
+33 
+gëIndex
+();
+
+36 
+£tNext
+(
+ty≥Node
+ *
+√xt
+);
+
+37 
+£tE¡ry
+(
+ty≥Node
+ *
+íåy
+);
+
+38 
+£tIndex
+(
+ödex
+);
+
+41 
+gëCou¡
+();
+
+44 
+ty≥Node
+ *
+öãgî
+, *
+boﬁón
+, *
+ª„ªn˚
+, *
+_îr‹
+;
+
+	@util.cpp
+
+1 
+	~"utû.h
+"
+
+2 
+	~"compûî.hµ
+"
+
+4 
+	~<io°ªam
+>
+
+5 
+	~<£t
+>
+
+7 
+	#debug
+ 
+°d
+::
+	`°rög
+(
+__FILE__
+)+°d::°rög(",")+°d::
+	`to_°rög
+(
+__LINE__
+)
+
+	)
+
+9 
+îr‹
+(c⁄° 
+°d
+::
+°rög
+ &
+s
+, 
+l
+ = -1, 
+c
+ = -1) {
+
+10 
+°d
+::
+cout
+ << "ERROR: ";
+
+11 i‡(
+	gl
+ != -1)
+
+12 
+°d
+::
+cout
+ << 
+l
+;
+
+14 i‡(
+	gc
+ != -1)
+
+15 
+°d
+::
+cout
+ << "," << 
+c
+ << ": ";
+
+17 
+	g°d
+::
+cout
+ << ": ";
+
+18 
+	g°d
+::
+cout
+ << 
+s
+ << "\n";
+
+21 
+	$gëUßgeTy≥
+(
+symbﬁNode
+ *
+íåy
+) {
+
+22 i‡(!
+íåy
+)
+
+24 i‡(
+íåy
+->
+	`gëSize
+() == -2)
+
+25  
+FUNCTION
+;
+
+26 i‡(
+íåy
+->
+	`gëSize
+() == -1)
+
+27  
+VARIABLE
+;
+
+29  
+ARRAY
+;
+
+30 
+	}
+}
+
+34 
+SNode
+ *
+	$¥o˚ssFun˘i⁄Hódî
+(
+SNode
+ *
+d©©y≥
+, SNodê*
+fun˘i⁄ID
+, SNodê*
+¨gumíts
+, SNodê*
+de˛¨©i⁄s
+, SNodê*
+globÆSc›e
+) {
+
+35 
+SNode
+ *
+ªtu∫VÆue
+ = 
+√w
+ 
+	`SNode
+(
+FUNC
+, 
+fun˘i⁄ID
+->
+	`gëName
+(), fun˘i⁄ID->
+löeNo
+, fun˘i⁄ID->
+cﬁNo
+);
+
+36 
+ªtu∫VÆue
+->
+	`£tRëu∫Ty≥
+(
+d©©y≥
+->
+	`gëRëu∫Ty≥
+());
+
+37 
+symbﬁNode
+ *
+íåy
+ = 
+globÆSc›e
+->
+	`gëTabÀ
+()->
+	`lookUp
+(
+fun˘i⁄ID
+->
+	`gëName
+());
+
+40 
+ªtu∫VÆue
+->
+	`£tE¡ry
+(
+íåy
+);
+
+41 i‡(
+íåy
+ =
+nuŒ±r
+) {
+
+42 
+	`îr‹
+("Fun˘i⁄ÇŸ De˛¨ed", 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+43  
+nuŒ±r
+;
+
+45 i‡(
+íåy
+->
+	`gëSize
+() != -2) {
+
+46 
+	`îr‹
+("C™àu£ V¨übÀá†Fun˘i⁄", 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+47  
+nuŒ±r
+;
+
+49 i‡(
+¨gumíts
+ =
+nuŒ±r
+ && 
+íåy
+->
+	`gëArgs
+().
+	`size
+() != 0) {
+
+50 
+	`îr‹
+("Wr⁄g Numbî o‡Argumíts", 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+51  
+nuŒ±r
+;
+
+53 
+°d
+::
+£t
+<°d::
+°rög
+> 
+¨gmu√tNames
+;
+
+54 
+°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> 
+¨gli°
+;
+
+55 
+SNode
+ *
+ãmp1
+ = 
+¨gumíts
+;Åemp1 !
+nuŒ±r
+;Åemp1 =Åemp1->
+	`gëNext
+())
+
+56 
+SNode
+ *
+ãmp2
+ = 
+ãmp1
+->
+	`gëPTR3
+();Åemp2 !
+nuŒ±r
+;Åemp2 =Åemp2->
+	`gëNext
+()) {
+
+57 
+¨gli°
+.
+	`push_back
+(
+√w
+ 
+	`symbﬁNode
+(
+ãmp2
+->
+	`gëName
+(), 
+ãmp1
+->
+	`gëRëu∫Ty≥
+()));
+
+58 autÿ
+ªsu…
+ = 
+¨gmu√tNames
+.
+	`ö£π
+(
+ãmp2
+->
+	`gëName
+());
+
+59 i‡(!
+ªsu…
+.
+£c⁄d
+) {
+
+60 
+	`îr‹
+("Du∂iˇãárgumíà'" + 
+ãmp2
+->
+	`gëName
+(),Åemp2->
+löeNo
+,Åemp2->
+cﬁNo
+);
+
+61  
+nuŒ±r
+;
+
+63 i‡(
+ãmp2
+->
+	`gëRëu∫Ty≥
+(Ë=
+ª„ªn˚
+) {
+
+64 
+¨gli°
+.
+	`back
+()->
+	`£tAsPassByRe„ªn˚
+();
+
+68 i‡(
+¨gli°
+.
+	`size
+(Ë!
+íåy
+->
+	`gëArgs
+().size()) {
+
+69 
+	`îr‹
+("Wr⁄g Numbî o‡Argumíts", 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+70  
+nuŒ±r
+;
+
+73 
+i
+ = 0; i < 
+¨gli°
+.
+	`size
+(); i++)
+
+74 i‡(
+¨gli°
+[
+i
+]->
+	`gëTy≥
+(Ë!
+íåy
+->
+	`gëArgs
+()[i]->getType()) {
+
+75 
+	`îr‹
+("Argumíà" + 
+°d
+::
+	`to_°rög
+(
+i
+ + 1Ë+ "'†D©®Ty≥ i¿de˛î©i⁄: " + 
+íåy
+->
+	`gëArgs
+()[i]->
+	`gëTy≥
+()->
+	`gëTy≥Name
+(Ë+ "' i†nŸ samêa†Argumít'†D©®Ty≥ i¿deföôi⁄: " + 
+¨gli°
+[i]->gëTy≥()->gëTy≥Name(), 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+76  
+nuŒ±r
+;
+
+78 i‡(
+¨gli°
+[
+i
+]->
+	`gëName
+(Ë!
+íåy
+->
+	`gëArgs
+()[i]->getName()) {
+
+79 
+	`îr‹
+("Argumíà" + 
+°d
+::
+	`to_°rög
+(
+i
+ + 1Ë+ "'†Namêö de˛î©i⁄: " + 
+íåy
+->
+	`gëArgs
+()[i]->
+	`gëName
+(Ë+ "' i†nŸ samêa†Argumít'†Namêö deföôi⁄: " + 
+¨gli°
+[i]->gëName(), 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+80  
+nuŒ±r
+;
+
+82 i‡(
+¨gli°
+[
+i
+]->
+	`isPas£dByRe„ªn˚
+(Ë&& !
+íåy
+->
+	`gëArgs
+()[i]->isPassedByReference()) {
+
+83 
+	`îr‹
+("Argumíà" + 
+°d
+::
+	`to_°rög
+(
+i
+ + 1Ë+ " i†∑s£d by vÆuêö Deföôi⁄ buànŸ i¿De˛¨©i⁄", 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+84  
+nuŒ±r
+;
+
+86 i‡(!
+¨gli°
+[
+i
+]->
+	`isPas£dByRe„ªn˚
+(Ë&& 
+íåy
+->
+	`gëArgs
+()[i]->isPassedByReference()) {
+
+87 
+	`îr‹
+("Argumíà" + 
+°d
+::
+	`to_°rög
+(
+i
+ + 1Ë+ " i†∑s£d byÑe„ªn˚ i¿Deföôi⁄ buànŸ i¿De˛¨©i⁄", 
+d©©y≥
+->
+löeNo
+, d©©y≥->
+cﬁNo
+);
+
+88  
+nuŒ±r
+;
+
+91 i‡(
+de˛¨©i⁄s
+)
+
+92 
+symbﬁNode
+ *
+i
+ = 
+de˛¨©i⁄s
+->
+	`gëTabÀ
+()->
+	`gëNext
+(); i; i = i->getNext()) {
+
+93 autÿ
+£¨ch
+ = 
+¨gmu√tNames
+.
+	`föd
+(
+i
+->
+	`gëName
+());
+
+94 i‡(
+£¨ch
+ !
+¨gmu√tNames
+.
+	`íd
+()) {
+
+95 
+	`îr‹
+("C™'àDe˛¨ê'" + 
+i
+->
+	`gëName
+(Ë+ "'. AÃódy U£dá†®Argumít", 
+de˛¨©i⁄s
+->
+löeNo
+, de˛¨©i⁄s->
+cﬁNo
+);
+
+96  
+nuŒ±r
+;
+
+98 i‡(
+i
+->
+	`gëSize
+() > 0) {
+
+99 
+	`îr‹
+("C™nŸ De˛¨êAºay i¿®Fun˘i⁄", 
+de˛¨©i⁄s
+->
+löeNo
+, de˛¨©i⁄s->
+cﬁNo
+);
+
+100  
+nuŒ±r
+;
+
+102 i‡(
+i
+->
+	`gëSize
+() == -2) {
+
+103 
+	`îr‹
+("C™nŸ De˛¨êFun˘i⁄†öá Fun˘i⁄", 
+de˛¨©i⁄s
+->
+löeNo
+, de˛¨©i⁄s->
+cﬁNo
+);
+
+104  
+nuŒ±r
+;
+
+109 i‡(
+de˛¨©i⁄s
+)
+
+110 
+ªtu∫VÆue
+->
+	`£tTabÀ
+(
+de˛¨©i⁄s
+->
+	`gëTabÀ
+());
+
+111 
+íåy
+->
+	`£tArgs
+(
+¨gli°
+);
+
+112 
+symbﬁNode
+ *
+i
+ : 
+¨gli°
+)
+
+113 i‡(
+i
+ !
+nuŒ±r
+)
+
+114 
+dñëe
+ 
+i
+;
+
+116  
+ªtu∫VÆue
+;
+
+117 
+	}
+}
+
+121 
+boﬁ
+ 
+	$¥o˚ssDe˛î©i⁄s
+(
+symbﬁNode
+ *
+TabÀ
+, 
+SNode
+ *
+de˛¨eLi°
+) {
+
+122 
+SNode
+ *
+hód
+ = 
+de˛¨eLi°
+; hód !
+nuŒ±r
+; hód = hód->
+	`gëNext
+()) {
+
+123 
+SNode
+ *
+i
+ = 
+hód
+->
+	`gëPTR3
+(); i !
+nuŒ±r
+; i = i->getPTR3()) {
+
+124 
+°d
+::
+ve˘‹
+<
+symbﬁNode
+ *> 
+¨gli°
+;
+
+125 i‡(
+i
+->
+	`gëNodeTy≥
+(Ë=
+FUNC
+) {
+
+126 
+°d
+::
+£t
+<°d::
+°rög
+> 
+¨gmu√tNames
+;
+
+127 
+SNode
+ *
+ãmp1
+ = 
+i
+->
+	`gëPTR2
+();Åemp1 !
+nuŒ±r
+;Åemp1 =Åemp1->
+	`gëNext
+())
+
+128 
+SNode
+ *
+ãmp2
+ = 
+ãmp1
+->
+	`gëPTR3
+();Åemp2 !
+nuŒ±r
+;Åemp2 =Åemp2->
+	`gëNext
+()) {
+
+129 
+¨gli°
+.
+	`push_back
+(
+√w
+ 
+	`symbﬁNode
+(
+ãmp2
+->
+	`gëName
+(), 
+ãmp1
+->
+	`gëRëu∫Ty≥
+()));
+
+130 autÿ
+ªsu…
+ = 
+¨gmu√tNames
+.
+	`ö£π
+(
+ãmp2
+->
+	`gëName
+());
+
+131 i‡(!
+ªsu…
+.
+£c⁄d
+) {
+
+132 
+	`îr‹
+("Du∂iˇãárgumíà'" + 
+ãmp2
+->
+	`gëName
+(),Åemp2->
+löeNo
+,Åemp2->
+cﬁNo
+);
+
+133  
+Ál£
+;
+
+135 i‡(
+ãmp2
+->
+	`gëRëu∫Ty≥
+(Ë=
+ª„ªn˚
+) {
+
+136 
+¨gli°
+.
+	`back
+()->
+	`£tAsPassByRe„ªn˚
+();
+
+140 
+symbﬁNode
+ *
+posôi⁄
+;
+
+141 i‡(
+i
+->
+	`gëPTR2
+())
+
+142 
+posôi⁄
+ = 
+TabÀ
+->
+	`ö°Æl
+(
+i
+->
+	`gëName
+(), 
+hód
+->
+	`gëRëu∫Ty≥
+(), i->
+	`gëPTR2
+()->
+	`gëVÆue
+());
+
+144 
+posôi⁄
+ = 
+TabÀ
+->
+	`ö°Æl
+(
+i
+->
+	`gëName
+(), 
+hód
+->
+	`gëRëu∫Ty≥
+());
+
+145 i‡(
+posôi⁄
+ =
+nuŒ±r
+) {
+
+146 
+	`îr‹
+("'" + 
+i
+->
+	`gëName
+(Ë+ "' i†Æªady de˛¨ed", i->
+löeNo
+, i->
+cﬁNo
+);
+
+147  
+Ál£
+;
+
+149 i‡(
+i
+->
+	`gëNodeTy≥
+(Ë=
+FUNC
+) {
+
+150 
+posôi⁄
+->
+	`£tArgs
+(
+¨gli°
+);
+
+154 
+size
+ = 1;
+
+155 
+symbﬁNode
+ *
+i
+ = 
+TabÀ
+->
+	`gëNext
+(); i; i = i->getNext()) {
+
+156 
+i
+->
+	`£tBödög
+(
+size
+);
+
+157 i‡(
+i
+->
+	`gëSize
+() == -1)
+
+158 
+size
+++;
+
+159 i‡(
+i
+->
+	`gëSize
+() == -2);
+
+161 
+size
+ +
+i
+->
+	`gëSize
+();
+
+163  
+åue
+;
+
+164 
+	}
+}
+
+165 
+SNode
+ *
+	$∑r£Membîs
+(
+SNode
+ *
+v¨übÀID
+, 
+symbﬁNode
+ *
+íåy
+) {
+
+166 
+ty≥Node
+ *
+ty≥E¡ry
+ = 
+íåy
+->
+	`gëTy≥
+()->
+	`gëE¡ry
+(), *
+ªtu∫Ty≥
+ =Éntry->getType();
+
+167 
+SNode
+ *
+i
+ = 
+v¨übÀID
+->
+	`gëPTR2
+(), *
+œ°
+ = variableID; i; i = i->getPTR2()) {
+
+168 
+ty≥Node
+ *
+membîE¡ry
+ = 
+ty≥E¡ry
+->
+	`lookUp
+(
+i
+->
+	`gëName
+());
+
+169 i‡(!
+membîE¡ry
+) {
+
+170 
+	`îr‹
+("'" + 
+œ°
+->
+	`gëName
+(Ë+ "' ha†nÿmembî '" + 
+i
+->gëName(Ë+ "'", i->
+löeNo
+, i->
+cﬁNo
+);
+
+171  
+nuŒ±r
+;
+
+173 
+i
+->
+	`£tNodeTy≥
+(
+membîE¡ry
+->
+	`gëIndex
+());
+
+174 
+ty≥E¡ry
+ = 
+membîE¡ry
+->
+	`gëE¡ry
+()->getEntry();
+
+175 
+ªtu∫Ty≥
+ = 
+membîE¡ry
+->
+	`gëE¡ry
+();
+
+176 
+œ°
+ = 
+i
+;
+
+178 
+SNode
+ *
+i
+ = 
+v¨übÀID
+->
+	`gëPTR2
+(); i; i = i->getPTR2())
+
+179 
+i
+->
+	`£tRëu∫Ty≥
+(
+ªtu∫Ty≥
+);
+
+180 
+v¨übÀID
+->
+	`£tRëu∫Ty≥
+(
+ªtu∫Ty≥
+);
+
+181  
+v¨übÀID
+;
+
+182 
+	}
+}
+
+183 
+SNode
+ *
+	$v¨übÀAc˚ss
+(
+SNode
+ *
+v¨übÀID
+, SNodê*
+ödexEx¥
+, SNodê*
+Sc›e
+[2], 
+u£dV¨übÀTy≥
+) {
+
+184 c⁄° 
+«mes
+[][20] = {"Array", "Variable", "Function"};
+
+185 
+i
+ = 0; i < 2; i++) {
+
+186 i‡(!
+Sc›e
+[
+i
+])
+
+188 
+symbﬁNode
+ *
+TabÀ
+ = 
+Sc›e
+[
+i
+]->
+	`gëTabÀ
+(), *
+íåy
+ = 
+nuŒ±r
+;
+
+189 i‡(
+TabÀ
+)
+
+190 
+íåy
+ = 
+TabÀ
+->
+	`lookUp
+(
+v¨übÀID
+->
+	`gëName
+());
+
+191 i‡(
+íåy
+ =
+nuŒ±r
+) {
+
+192 i‡(
+Sc›e
+[
+i
+]->
+	`gëE¡ry
+()) {
+
+193 
+symbﬁNode
+ *
+node
+ : 
+Sc›e
+[
+i
+]->
+	`gëE¡ry
+()->
+	`gëArgs
+()) {
+
+194 i‡(
+node
+->
+	`gëName
+(Ë=
+v¨übÀID
+->getName()) {
+
+195 
+íåy
+ = 
+node
+;
+
+201 i‡(
+íåy
+ =
+nuŒ±r
+)
+
+203 
+de˛¨edV¨übÀTy≥
+ = 
+	`gëUßgeTy≥
+(
+íåy
+);
+
+204 i‡(
+u£dV¨übÀTy≥
+ !
+de˛¨edV¨übÀTy≥
+) {
+
+205 
+	`îr‹
+("'" + 
+v¨übÀID
+->
+	`gëName
+(Ë+ "' u£dá†" + 
+«mes
+[
+u£dV¨übÀTy≥
+] + " buàde˛¨edá†" +Çames[
+de˛¨edV¨übÀTy≥
+], v¨übÀID->
+löeNo
+, v¨übÀID->
+cﬁNo
+);
+
+206  
+nuŒ±r
+;
+
+208 
+u£dV¨übÀTy≥
+) {
+
+209 
+ARRAY
+: {
+
+210 
+v¨übÀID
+->
+	`£tE¡ry
+(
+íåy
+);
+
+211 
+v¨übÀID
+->
+	`£tPTR1
+(
+ödexEx¥
+);
+
+212 
+v¨übÀID
+->
+	`£tRëu∫Ty≥
+(
+íåy
+->
+	`gëTy≥
+());
+
+213  
+	`∑r£Membîs
+(
+v¨übÀID
+, 
+íåy
+);
+
+216 
+VARIABLE
+: {
+
+217 
+v¨übÀID
+->
+	`£tE¡ry
+(
+íåy
+);
+
+218 
+v¨übÀID
+->
+	`£tRëu∫Ty≥
+(
+íåy
+->
+	`gëTy≥
+());
+
+219  
+	`∑r£Membîs
+(
+v¨übÀID
+, 
+íåy
+);
+
+222 
+FUNCTION
+: {
+
+223 
+°d
+::
+ve˘‹
+<
+SNode
+ *> 
+¨gli°
+;
+
+224 
+v¨übÀID
+->
+	`£tE¡ry
+(
+íåy
+);
+
+225 
+v¨übÀID
+->
+	`£tRëu∫Ty≥
+(
+íåy
+->
+	`gëTy≥
+());
+
+226 
+SNode
+ *
+ãmp
+ = 
+ödexEx¥
+, *
+√xt
+;Åemp;Åemp =Çext) {
+
+227 
+¨gli°
+.
+	`push_back
+(
+ãmp
+);
+
+228 
+√xt
+ = 
+ãmp
+->
+	`gëNext
+();
+
+229 
+ãmp
+->
+	`£tNext
+(
+nuŒ±r
+);
+
+231 i‡(
+¨gli°
+.
+	`size
+(Ë!
+íåy
+->
+	`gëArgs
+().size()) {
+
+232 
+	`îr‹
+("ArgumíàMism©cháà" + 
+°d
+::
+	`to_°rög
+(°d::
+	`mö
+(
+¨gli°
+.
+	`size
+(), 
+íåy
+->
+	`gëArgs
+().size())Ë+ "thárgumít", 
+v¨übÀID
+->
+löeNo
+, v¨übÀID->
+cﬁNo
+);
+
+233  
+nuŒ±r
+;
+
+235 
+v¨übÀID
+->
+	`£tArgs
+(
+¨gli°
+);
+
+236  
+v¨übÀID
+;
+
+243 
+	`îr‹
+("'" + 
+v¨übÀID
+->
+	`gëName
+(Ë+ "'ÇŸ De˛¨ed", v¨übÀID->
+löeNo
+, v¨übÀID->
+cﬁNo
+);
+
+244  
+nuŒ±r
+;
+
+245 
+	}
+}
+
+247 
+	gªgNo
+ = 0;
+
+249 
+gëReg
+(c⁄° 
+°d
+::
+°rög
+ &
+°r
+ = "") {
+
+250 i‡(
+ªgNo
+ == 8) {
+
+251 
+°d
+::
+cout
+ << "Eº‹: NÿRegi°îÜe·. Ch™gêyou∏Så©egy. " << 
+°r
+ << "\n";
+
+252 
+exô
+(1);
+
+254  
+	gªgNo
+++;
+
+257 
+‰ìReg
+(c⁄° 
+°d
+::
+°rög
+ &
+°r
+ = "") {
+
+258 i‡(
+ªgNo
+ == 0) {
+
+259 
+°d
+::
+cout
+ << "Eº‹: You shouldn'àbê‰ìögá REGÇow. Check you∏Logic. " << 
+°r
+ << "\n";
+
+260 
+exô
+(1);
+
+262  
+	gªgNo
+--;
+
+265 
+	$gëIfLabñ
+() {
+
+266 
+œbñ
+ = 0;
+
+267 i‡(
+œbñ
+ < 0) {
+
+268 
+°d
+::
+cout
+ << "Error: Whatáre you doing? weáre out of If Labels\n";
+
+269 
+	`exô
+(1);
+
+271 
+œbñ
+++;
+
+272  
+œbñ
+;
+
+273 
+	}
+}
+
+275 
+	$gëWhûeLabñ
+() {
+
+276 
+œbñ
+ = 0;
+
+277 i‡(
+œbñ
+ < 0) {
+
+278 
+°d
+::
+cout
+ << "Error: Whatáre you doing? weáre out of While Labels\n";
+
+279 
+	`exô
+(1);
+
+281 
+œbñ
+++;
+
+282  
+œbñ
+;
+
+283 
+	}
+}
+
+285 
+	$gíî©eFun˘i⁄Hód
+(
+SNode
+ *
+func
+, 
+FILE
+ *
+ouçut
+) {
+
+286 
+symbﬁNode
+ *
+èbÀ
+ = 
+func
+->
+	`gëTabÀ
+();
+
+287 
+size
+ = 0;
+
+288 i‡(
+èbÀ
+)
+
+289 
+symbﬁNode
+ *
+i
+ = 
+èbÀ
+->
+	`gëNext
+(); i !
+nuŒ±r
+; i = i->getNext()) {
+
+290 i‡(
+i
+->
+	`gëSize
+() == -1)
+
+291 
+size
+++;
+
+292 i‡(
+i
+->
+	`gëSize
+() == -2);
+
+294 
+size
+ +
+i
+->
+	`gëSize
+();
+
+296 
+	`Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+297 
+	`Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+298 
+ªg1
+ = 
+	`gëReg
+();
+
+299 
+ªg2
+ = 
+	`gëReg
+();
+
+300 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, BP\n", 
+ªg1
+);
+
+301 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+ªg2
+, 
+size
+);
+
+302 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ªg1
+, 
+ªg2
+);
+
+303 
+	`Ârötf
+(
+ouçut
+, "MOV SP, R%d\n", 
+ªg1
+);
+
+304 
+	`‰ìReg
+();
+
+305 
+	`‰ìReg
+();
+
+307 
+	}
+}
+
+308 
+	$gíî©eCode
+(
+SNode
+ *
+°¨t
+, 
+FILE
+ *
+ouçut
+) {
+
+309 
+	`Ârötf
+(
+ouçut
+, "START\n");
+
+310 
+	`Ârötf
+(
+ouçut
+, "MOV BP, 257\n");
+
+311 
+	`Ârötf
+(
+ouçut
+, "MOV SP, 256\n");
+
+312 
+	`gíî©eFun˘i⁄Hód
+(
+°¨t
+, 
+ouçut
+);
+
+313 
+	`Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+314 
+	`Ârötf
+(
+ouçut
+, "CALL FUNCmain\n");
+
+315 
+	`Ârötf
+(
+ouçut
+, "HALT\n");
+
+316 
+SNode
+ *
+i
+ = 
+°¨t
+; i !
+nuŒ±r
+; i = i->
+	`gëNext
+()) {
+
+317 
+	`codeGí
+(
+i
+, 
+ouçut
+);
+
+320 
+	}
+}
+
+321 
+	$gëLoˇti⁄
+(
+SNode
+ *
+node
+, 
+FILE
+ *
+ouçut
+) {
+
+323 
+symbﬁNode
+ *
+íåy
+ = 
+node
+->
+	`gëE¡ry
+();
+
+324 i‡(
+íåy
+->
+	`isGlobÆ
+()) {
+
+325 
+ba£AddrReg
+ = 
+	`gëReg
+();
+
+326 
+off£tReg
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+327 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+ba£AddrReg
+, 
+íåy
+->
+	`gëBödög
+() + 257);
+
+328 i‡(
+off£tReg
+ != -1) {
+
+329 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ba£AddrReg
+, 
+off£tReg
+);
+
+330 
+	`‰ìReg
+(
+debug
+);
+
+332 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR2
+(); i; i = i->getPTR2()){
+
+333 
+off£tReg
+ = 
+	`gëReg
+();
+
+334 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+off£tReg
+, 
+i
+->
+	`gëNodeTy≥
+());
+
+335 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, [R%d]\n", 
+ba£AddrReg
+, baseAddrReg);
+
+336 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ba£AddrReg
+, 
+off£tReg
+);
+
+337 
+	`‰ìReg
+(
+debug
+);
+
+339  
+ba£AddrReg
+;
+
+342 
+ba£AddrReg
+ = 
+	`gëReg
+();
+
+343 
+bödReg
+ = 
+	`gëReg
+();
+
+344 
+off£tReg
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+345 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, BP\n", 
+ba£AddrReg
+);
+
+346 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+bödReg
+, 
+íåy
+->
+	`gëBödög
+());
+
+347 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ba£AddrReg
+, 
+bödReg
+);
+
+348 i‡(
+off£tReg
+ != -1) {
+
+349 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ba£AddrReg
+, 
+off£tReg
+);
+
+350 
+	`‰ìReg
+(
+debug
+);
+
+352 i‡(
+íåy
+->
+	`isPas£dByRe„ªn˚
+())
+
+353 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, [R%d]\n", 
+ba£AddrReg
+, baseAddrReg);
+
+354 
+	`‰ìReg
+(
+debug
+);
+
+355 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR2
+(); i; i = i->getPTR2()){
+
+356 
+off£tReg
+ = 
+	`gëReg
+();
+
+357 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+off£tReg
+, 
+i
+->
+	`gëNodeTy≥
+());
+
+358 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, [R%d]\n", 
+ba£AddrReg
+, baseAddrReg);
+
+359 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ba£AddrReg
+, 
+off£tReg
+);
+
+360 
+	`‰ìReg
+(
+debug
+);
+
+362  
+ba£AddrReg
+;
+
+364 
+	}
+}
+
+365 
+	$codeGí
+(
+SNode
+ *
+node
+, 
+FILE
+ *
+ouçut
+) {
+
+367 i‡(!
+node
+)
+
+370 
+node
+->
+	`gëNodeTy≥
+()) {
+
+374 
+FUNC
+: {
+
+375 
+	`Ârötf
+(
+ouçut
+, "FUNC%s:\n", 
+node
+->
+	`gëName
+().
+	`c_°r
+());
+
+376 
+	`gíî©eFun˘i⁄Hód
+(
+node
+, 
+ouçut
+);
+
+377 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR2
+(); i !
+nuŒ±r
+; i = i->
+	`gëNext
+()) {
+
+378 
+	`codeGí
+(
+i
+, 
+ouçut
+);
+
+385 
+RETURN
+: {
+
+386 
+ªg1
+ = 
+	`gëReg
+();
+
+387 
+ªg2
+ = 
+	`gëReg
+();
+
+388 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, -2\n", 
+ªg1
+);
+
+389 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, BP\n", 
+ªg2
+);
+
+390 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ªg1
+, 
+ªg2
+);
+
+391 
+	`‰ìReg
+();
+
+392 
+ªg2
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+393 
+	`Ârötf
+(
+ouçut
+, "MOV [R%d], R%d\n", 
+ªg1
+, 
+ªg2
+);
+
+394 
+	`Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+395 
+	`Ârötf
+(
+ouçut
+, "POP BP\n");
+
+396 
+	`Ârötf
+(
+ouçut
+, "RET\n");
+
+397 
+	`‰ìReg
+();
+
+398 
+	`‰ìReg
+();
+
+404 
+ID
+: {
+
+405 
+symbﬁNode
+ *
+íåy
+ = 
+node
+->
+	`gëE¡ry
+();
+
+406 
+	`gëUßgeTy≥
+(
+íåy
+)) {
+
+407 
+FUNCTION
+: {
+
+408 
+ªtu∫Reg
+ = 
+	`gëReg
+();
+
+409 
+i
+ = 0; i < 
+ªtu∫Reg
+; i++)
+
+410 
+	`Ârötf
+(
+ouçut
+, "PUSH R%d\n", 
+i
+);
+
+411 
+ªg1
+ = 
+	`gëReg
+();
+
+412 
+ªg2
+ = 
+	`gëReg
+();
+
+413 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, SP\n", 
+ªg1
+);
+
+414 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %lu\n", 
+ªg2
+, 
+íåy
+->
+	`gëArgs
+().
+	`size
+() + 1);
+
+415 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ªg2
+, 
+ªg1
+);
+
+416 
+	`Ârötf
+(
+ouçut
+, "MOV SP, R%d\n", 
+ªg2
+);
+
+417 
+	`‰ìReg
+();
+
+418 
+i
+ = 0; i < 
+node
+->
+	`gëArgs
+().
+	`size
+(); i++) {
+
+419 i‡(
+íåy
+->
+	`gëArgs
+()[
+i
+]->
+	`isPas£dByRe„ªn˚
+()) {
+
+420 
+SNode
+ *
+a˘uÆArg
+ = 
+node
+->
+	`gëArgs
+()[
+i
+];
+
+421 
+loˇti⁄
+ = 
+	`gëLoˇti⁄
+(
+a˘uÆArg
+, 
+ouçut
+);
+
+422 
+ªg2
+ = 
+	`gëReg
+();
+
+423 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+ªg2
+, 
+i
+ + 1);
+
+424 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ªg2
+, 
+ªg1
+);
+
+425 
+	`Ârötf
+(
+ouçut
+, "MOV [R%d], R%d\n", 
+ªg2
+, 
+loˇti⁄
+);
+
+426 
+	`‰ìReg
+(
+debug
+);
+
+427 
+	`‰ìReg
+(
+debug
+);
+
+430 
+ªg
+ = 
+	`codeGí
+(
+node
+->
+	`gëArgs
+()[
+i
+], 
+ouçut
+);
+
+431 
+ªg2
+ = 
+	`gëReg
+();
+
+432 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+ªg2
+, 
+i
+ + 1);
+
+433 
+	`Ârötf
+(
+ouçut
+, "ADD R%d, R%d\n", 
+ªg2
+, 
+ªg1
+);
+
+434 
+	`Ârötf
+(
+ouçut
+, "MOV [R%d], R%d\n", 
+ªg2
+, 
+ªg
+);
+
+435 
+	`‰ìReg
+(
+debug
+);
+
+436 
+	`‰ìReg
+(
+debug
+);
+
+439 
+	`Ârötf
+(
+ouçut
+, "CALL FUNC%s\n", 
+node
+->
+	`gëName
+().
+	`c_°r
+());
+
+440 
+	`‰ìReg
+();
+
+442 
+ªg1
+ = 
+	`gëReg
+();
+
+443 
+ªg2
+ = 
+	`gëReg
+();
+
+444 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, SP\n", 
+ªg1
+);
+
+445 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %lu\n", 
+ªg2
+, 
+íåy
+->
+	`gëArgs
+().
+	`size
+() + 1);
+
+446 
+	`Ârötf
+(
+ouçut
+, "SUB R%d, R%d\n", 
+ªg1
+, 
+ªg2
+);
+
+447 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, SP\n", 
+ªg2
+);
+
+448 
+	`Ârötf
+(
+ouçut
+, "MOV SP, R%d\n", 
+ªg1
+);
+
+449 i‡(
+ªtu∫Reg
+)
+
+450 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, [R%d]\n", 
+ªtu∫Reg
+, 
+ªg2
+);
+
+452 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, [R%d]\n", 
+ªtu∫Reg
+, 
+ªg2
+);
+
+453 
+	`‰ìReg
+(
+debug
+);
+
+454 
+	`‰ìReg
+(
+debug
+);
+
+455 
+i
+ = 
+ªtu∫Reg
+ - 1; i >= 0; i--)
+
+456 
+	`Ârötf
+(
+ouçut
+, "POP R%d\n", 
+i
+);
+
+457  
+ªtu∫Reg
+;
+
+460 
+VARIABLE
+:
+
+461 
+ARRAY
+: {
+
+463 
+loˇti⁄
+ = 
+	`gëLoˇti⁄
+(
+node
+, 
+ouçut
+);
+
+464 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, [R%d] //deb\n", 
+loˇti⁄
+,Üocation);
+
+465  
+loˇti⁄
+;
+
+470 
+READ
+: {
+
+471 
+SNode
+ *
+v¨übÀ
+ = 
+node
+->
+	`gëPTR2
+();
+
+472 
+	`gëUßgeTy≥
+(
+v¨übÀ
+->
+	`gëE¡ry
+())) {
+
+473 
+FUNCTION
+: {
+
+476 
+VARIABLE
+:
+
+477 
+ARRAY
+: {
+
+478 
+öputReg
+ = 
+	`gëReg
+();
+
+479 
+loˇti⁄
+ = 
+	`gëLoˇti⁄
+(
+v¨übÀ
+, 
+ouçut
+);
+
+480 
+	`Ârötf
+(
+ouçut
+, "IN R%d\n", 
+öputReg
+);
+
+481 
+	`Ârötf
+(
+ouçut
+, "MOV [R%d], R%d\n", 
+loˇti⁄
+, 
+öputReg
+);
+
+482 
+	`‰ìReg
+();
+
+483 
+	`‰ìReg
+();
+
+490 
+SNode
+ *
+lVÆue
+ = 
+node
+->
+	`gëPTR1
+(), *
+rVÆue
+ =Çode->
+	`gëPTR2
+();
+
+491 
+symbﬁNode
+ *
+íåy
+ = 
+lVÆue
+->
+	`gëE¡ry
+();
+
+492 
+	`gëUßgeTy≥
+(
+íåy
+)) {
+
+493 
+FUNCTION
+: {
+
+496 
+VARIABLE
+:
+
+497 
+ARRAY
+: {
+
+498 
+öputReg
+ = 
+	`codeGí
+(
+rVÆue
+, 
+ouçut
+);
+
+499 
+loˇti⁄
+ = 
+	`gëLoˇti⁄
+(
+lVÆue
+, 
+ouçut
+);
+
+500 
+	`Ârötf
+(
+ouçut
+, "MOV [R%d], R%d\n", 
+loˇti⁄
+, 
+öputReg
+);
+
+501 
+	`‰ìReg
+();
+
+502 
+	`‰ìReg
+();
+
+511 
+WRITE
+: {
+
+512 
+ªg
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+513 
+	`Ârötf
+(
+ouçut
+, "OUT R%d\n", 
+ªg
+);
+
+514 
+	`‰ìReg
+(
+debug
+);
+
+517 
+IF
+: {
+
+518 i‡(
+node
+->
+	`gëPTR3
+(Ë=
+nuŒ±r
+) {
+
+519 
+œbñ
+ = 
+	`gëIfLabñ
+();
+
+520 
+	`Ârötf
+(
+ouçut
+, "IFSTART%d:\n", 
+œbñ
+);
+
+521 
+ªg
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+522 
+	`Ârötf
+(
+ouçut
+, "JZ R%d, ENDIF%d\n", 
+ªg
+, 
+œbñ
+);
+
+523 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR2
+(); i !
+nuŒ±r
+; i = i->
+	`gëNext
+()) {
+
+524 
+	`codeGí
+(
+i
+, 
+ouçut
+);
+
+526 
+	`Ârötf
+(
+ouçut
+, "ENDIF%d:\n", 
+œbñ
+);
+
+527 
+	`‰ìReg
+(
+debug
+);
+
+530 
+œbñ
+ = 
+	`gëIfLabñ
+();
+
+531 
+	`Ârötf
+(
+ouçut
+, "IFSTART%d:\n", 
+œbñ
+);
+
+532 
+ªg
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+533 
+	`Ârötf
+(
+ouçut
+, "JZ R%d, ELSEPART%d\n", 
+ªg
+, 
+œbñ
+);
+
+534 
+	`‰ìReg
+(
+debug
+);
+
+535 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR2
+(); i !
+nuŒ±r
+; i = i->
+	`gëNext
+()) {
+
+536 
+	`codeGí
+(
+i
+, 
+ouçut
+);
+
+538 
+	`Ârötf
+(
+ouçut
+, "JMP ENDIF%d\n", 
+œbñ
+);
+
+539 
+	`Ârötf
+(
+ouçut
+, "ELSEPART%d:\n", 
+œbñ
+);
+
+540 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR3
+(); i !
+nuŒ±r
+; i = i->
+	`gëNext
+()) {
+
+541 
+	`codeGí
+(
+i
+, 
+ouçut
+);
+
+543 
+	`Ârötf
+(
+ouçut
+, "ENDIF%d:\n", 
+œbñ
+);
+
+547 
+WHILE
+: {
+
+548 
+œbñ
+ = 
+	`gëWhûeLabñ
+();
+
+549 
+	`Ârötf
+(
+ouçut
+, "WHILES%d:\n", 
+œbñ
+);
+
+550 
+ªg
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+551 
+	`‰ìReg
+(
+debug
+);
+
+552 
+	`Ârötf
+(
+ouçut
+, "JZ R%d, ENDWHILE%d\n", 
+ªg
+, 
+œbñ
+);
+
+553 
+SNode
+ *
+i
+ = 
+node
+->
+	`gëPTR2
+(); i !
+nuŒ±r
+; i = i->
+	`gëNext
+()) {
+
+554 
+	`codeGí
+(
+i
+, 
+ouçut
+);
+
+556 
+	`Ârötf
+(
+ouçut
+, "JMP WHILES%d\n", 
+œbñ
+);
+
+557 
+	`Ârötf
+(
+ouçut
+, "ENDWHILE%d:\n", 
+œbñ
+);
+
+560 
+START
+: {
+
+566 
+NUM
+: {
+
+567 
+ªg
+ = 
+	`gëReg
+();
+
+568 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, %d\n", 
+ªg
+, 
+node
+->
+	`gëVÆue
+());
+
+569  
+ªg
+;
+
+572 
+TRUE
+: {
+
+573 
+ªg
+ = 
+	`gëReg
+();
+
+574 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, 1\n", 
+ªg
+);
+
+575  
+ªg
+;
+
+578 
+FALSE
+: {
+
+579 
+ªg
+ = 
+	`gëReg
+();
+
+580 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, 0\n", 
+ªg
+);
+
+581  
+ªg
+;
+
+588 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+589 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+590 
+	`Ârötf
+(
+ouçut
+, "ADD R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+591 
+	`‰ìReg
+(
+debug
+);
+
+592  
+LHS
+;
+
+596 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+597 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+598 
+	`Ârötf
+(
+ouçut
+, "SUB R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+599 
+	`‰ìReg
+(
+debug
+);
+
+600  
+LHS
+;
+
+604 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+605 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+606 
+	`Ârötf
+(
+ouçut
+, "MUL R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+607 
+	`‰ìReg
+(
+debug
+);
+
+608  
+LHS
+;
+
+612 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+613 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+614 
+	`Ârötf
+(
+ouçut
+, "DIV R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+615 
+	`‰ìReg
+(
+debug
+);
+
+616  
+LHS
+;
+
+620 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+621 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+622 
+	`Ârötf
+(
+ouçut
+, "LT R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+623 
+	`‰ìReg
+(
+debug
+);
+
+624  
+LHS
+;
+
+628 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+629 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+630 
+	`Ârötf
+(
+ouçut
+, "GT R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+631 
+	`‰ìReg
+(
+debug
+);
+
+632  
+LHS
+;
+
+636 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+637 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+638 
+	`Ârötf
+(
+ouçut
+, "MOD R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+639 
+	`‰ìReg
+(
+debug
+);
+
+640  
+LHS
+;
+
+643 
+LEQ
+: {
+
+644 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+645 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+646 
+	`Ârötf
+(
+ouçut
+, "LE R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+647 
+	`‰ìReg
+(
+debug
+);
+
+648  
+LHS
+;
+
+651 
+GEQ
+: {
+
+652 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+653 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+654 
+	`Ârötf
+(
+ouçut
+, "GE R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+655 
+	`‰ìReg
+(
+debug
+);
+
+656  
+LHS
+;
+
+659 
+ISEQ
+: {
+
+660 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+661 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+662 
+	`Ârötf
+(
+ouçut
+, "EQ R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+663 
+	`‰ìReg
+(
+debug
+);
+
+664  
+LHS
+;
+
+667 
+NOTEQ
+: {
+
+668 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+669 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+670 
+	`Ârötf
+(
+ouçut
+, "NE R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+671 
+	`‰ìReg
+(
+debug
+);
+
+672  
+LHS
+;
+
+675 
+AND
+: {
+
+676 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+677 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+678 
+	`Ârötf
+(
+ouçut
+, "MUL R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+679 
+	`‰ìReg
+(
+debug
+);
+
+680  
+LHS
+;
+
+683 
+OR
+: {
+
+684 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+685 
+RHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR2
+(), 
+ouçut
+);
+
+686 
+	`Ârötf
+(
+ouçut
+, "ADD R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+687 
+	`Ârötf
+(
+ouçut
+, "MOV R%d, 0\n", 
+RHS
+);
+
+688 
+	`Ârötf
+(
+ouçut
+, "NE R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+689 
+	`‰ìReg
+(
+debug
+);
+
+690  
+LHS
+;
+
+693 
+NOT
+: {
+
+694 
+LHS
+ = 
+	`codeGí
+(
+node
+->
+	`gëPTR1
+(), 
+ouçut
+);
+
+695 
+RHS
+ = 
+	`gëReg
+();
+
+696 
+	`Ârötf
+(
+ouçut
+, "MOV R%d 0\n", 
+RHS
+);
+
+697 
+	`Ârötf
+(
+ouçut
+, "EQ R%d R%d\n", 
+LHS
+, 
+RHS
+);
+
+698 
+	`‰ìReg
+(
+debug
+);
+
+699  
+LHS
+;
+
+703 
+°d
+::
+cout
+ << "ERROR:\a\®NŸ Recognized " << 
+node
+->
+	`gëNodeTy≥
+() <<
+
+704 " (ch¨)" << ()(
+node
+->
+	`gëNodeTy≥
+()) << "\n";
+
+708 
+	}
+}
+
+709 
+	$checkFun˘i⁄De˛¨ed
+(
+SNode
+ *
+¥ogøm
+) {
+
+710 
+°d
+::
+£t
+<
+symbﬁNode
+ *> 
+de˛¨edFun˘i⁄s
+;
+
+711 
+symbﬁNode
+ *
+i
+ = 
+¥ogøm
+->
+	`gëTabÀ
+()->
+	`gëNext
+(); i; i = i->getNext())
+
+712 i‡(
+	`gëUßgeTy≥
+(
+i
+Ë=
+FUNCTION
+ && i->
+	`gëName
+() != "free" && i->getName() != "allocate" && i->getName() != "initialize")
+
+713 
+de˛¨edFun˘i⁄s
+.
+	`ö£π
+(
+i
+);
+
+714 
+SNode
+ *
+i
+ = 
+¥ogøm
+->
+	`gëNext
+(); i; i = i->getNext())
+
+715 
+de˛¨edFun˘i⁄s
+.
+	`îa£
+(
+i
+->
+	`gëE¡ry
+());
+
+716 i‡(
+de˛¨edFun˘i⁄s
+.
+	`em±y
+())
+
+717  
+PASS
+;
+
+718 autÿ
+i
+ : 
+de˛¨edFun˘i⁄s
+) {
+
+719 
+	`îr‹
+("'" + 
+i
+->
+	`gëName
+(Ë+ "' De˛¨ed buànŸ Deföed", 
+¥ogøm
+->
+löeNo
+,Örogøm->
+cﬁNo
+);
+
+721  
+FAIL
+;
+
+722 
+	}
+}
+
+723 
+	$addLibøry
+(
+FILE
+ *
+ouçut
+) {
+
+724 
+	`Ârötf
+(
+ouçut
+, "FUNCinitialize:\n");
+
+725 
+	`Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+726 
+	`Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+727 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+728 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+729 
+	`Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+730 
+	`Ârötf
+(
+ouçut
+, "MOV SP, R0\n");
+
+731 
+	`Ârötf
+(
+ouçut
+, "MOV [256], 0\n");
+
+732 
+	`Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+733 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+734 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+735 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+736 
+	`Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+737 
+	`Ârötf
+(
+ouçut
+, "WHILES1:\n");
+
+738 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+739 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+740 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+741 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+742 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 256\n");
+
+743 
+	`Ârötf
+(
+ouçut
+, "LT R0 R1\n");
+
+744 
+	`Ârötf
+(
+ouçut
+, "JZ R0, ENDWHILE1\n");
+
+745 
+	`Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+746 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+747 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+748 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+749 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+750 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+751 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+752 
+	`Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+753 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+754 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+755 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+756 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+757 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+758 
+	`Ârötf
+(
+ouçut
+, "ADD R0 R1\n");
+
+759 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+760 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+761 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+762 
+	`Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+763 
+	`Ârötf
+(
+ouçut
+, "JMP WHILES1\n");
+
+764 
+	`Ârötf
+(
+ouçut
+, "ENDWHILE1:\n");
+
+765 
+	`Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+766 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+767 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+768 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+769 
+	`Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+770 
+	`Ârötf
+(
+ouçut
+, "WHILES2:\n");
+
+771 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+772 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+773 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+774 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+775 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 248\n");
+
+776 
+	`Ârötf
+(
+ouçut
+, "LT R0 R1\n");
+
+777 
+	`Ârötf
+(
+ouçut
+, "JZ R0, ENDWHILE2\n");
+
+778 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+779 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+780 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+781 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+782 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 8\n");
+
+783 
+	`Ârötf
+(
+ouçut
+, "ADD R0 R1\n");
+
+784 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+785 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+786 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+787 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+788 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+789 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+790 
+	`Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+791 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+792 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+793 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+794 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+795 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 8\n");
+
+796 
+	`Ârötf
+(
+ouçut
+, "ADD R0 R1\n");
+
+797 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+798 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+799 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+800 
+	`Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+801 
+	`Ârötf
+(
+ouçut
+, "JMP WHILES2\n");
+
+802 
+	`Ârötf
+(
+ouçut
+, "ENDWHILE2:\n");
+
+803 
+	`Ârötf
+(
+ouçut
+, "MOV R0, 0\n");
+
+804 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+805 
+	`Ârötf
+(
+ouçut
+, "SUB R0 R1\n");
+
+806 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+807 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+808 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+809 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+810 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+811 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+812 
+	`Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+813 
+	`Ârötf
+(
+ouçut
+, "MOV R0, -2\n");
+
+814 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+815 
+	`Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+816 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 0\n");
+
+817 
+	`Ârötf
+(
+ouçut
+, "MOV [R0], R1\n");
+
+818 
+	`Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+819 
+	`Ârötf
+(
+ouçut
+, "POP BP\n");
+
+820 
+	`Ârötf
+(
+ouçut
+, "RET\n");
+
+821 
+	`Ârötf
+(
+ouçut
+, "FUNCallocate:\n");
+
+822 
+	`Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+823 
+	`Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+824 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+825 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+826 
+	`Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+827 
+	`Ârötf
+(
+ouçut
+, "MOV SP, R0\n");
+
+828 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [256]\n");
+
+829 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+830 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+831 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+832 
+	`Ârötf
+(
+ouçut
+, "MOV [R2], R0\n");
+
+833 
+	`Ârötf
+(
+ouçut
+, "IFSTART1:\n");
+
+834 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [256]\n");
+
+835 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 0\n");
+
+836 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+837 
+	`Ârötf
+(
+ouçut
+, "SUB R1 R2\n");
+
+838 
+	`Ârötf
+(
+ouçut
+, "NE R0 R1\n");
+
+839 
+	`Ârötf
+(
+ouçut
+, "JZ R0, ENDIF1\n");
+
+840 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [256]\n");
+
+841 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 0 \n");
+
+842 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+843 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R1]\n");
+
+844 
+	`Ârötf
+(
+ouçut
+, "MOV [256], R1\n");
+
+845 
+	`Ârötf
+(
+ouçut
+, "ENDIF1:\n");
+
+846 
+	`Ârötf
+(
+ouçut
+, "MOV R0, -2\n");
+
+847 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+848 
+	`Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+849 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+850 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 1\n");
+
+851 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+852 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+853 
+	`Ârötf
+(
+ouçut
+, "MOV [R0], R1\n");
+
+854 
+	`Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+855 
+	`Ârötf
+(
+ouçut
+, "POP BP\n");
+
+856 
+	`Ârötf
+(
+ouçut
+, "RET\n");
+
+857 
+	`Ârötf
+(
+ouçut
+, "FUNCfree:\n");
+
+858 
+	`Ârötf
+(
+ouçut
+, "PUSH BP\n");
+
+859 
+	`Ârötf
+(
+ouçut
+, "MOV BP, SP\n");
+
+860 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+861 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 1\n");
+
+862 
+	`Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+863 
+	`Ârötf
+(
+ouçut
+, "MOV SP, R0\n");
+
+864 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [256]\n");
+
+865 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+866 
+	`Ârötf
+(
+ouçut
+, "MOV R2, -3\n");
+
+867 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+868 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+869 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R1]\n");
+
+870 
+	`Ârötf
+(
+ouçut
+, "MOV R2, 0\n");
+
+871 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R2\n");
+
+872 
+	`Ârötf
+(
+ouçut
+, "MOV [R1], R0\n");
+
+873 
+	`Ârötf
+(
+ouçut
+, "MOV R0, BP\n");
+
+874 
+	`Ârötf
+(
+ouçut
+, "MOV R1, -3\n");
+
+875 
+	`Ârötf
+(
+ouçut
+, "ADD R1, R0\n");
+
+876 
+	`Ârötf
+(
+ouçut
+, "MOV R0, [R1]\n");
+
+877 
+	`Ârötf
+(
+ouçut
+, "MOV [256], R0\n");
+
+878 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+879 
+	`Ârötf
+(
+ouçut
+, "MOV R2, -3\n");
+
+880 
+	`Ârötf
+(
+ouçut
+, "ADD R2, R1\n");
+
+881 
+	`Ârötf
+(
+ouçut
+, "MOV R1, [R2]\n");
+
+882 
+	`Ârötf
+(
+ouçut
+, "MOV [R1], -1\n");
+
+883 
+	`Ârötf
+(
+ouçut
+, "MOV R0, -2\n");
+
+884 
+	`Ârötf
+(
+ouçut
+, "MOV R1, BP\n");
+
+885 
+	`Ârötf
+(
+ouçut
+, "ADD R0, R1\n");
+
+886 
+	`Ârötf
+(
+ouçut
+, "MOV R1, 0\n");
+
+887 
+	`Ârötf
+(
+ouçut
+, "MOV [R0], R1\n");
+
+888 
+	`Ârötf
+(
+ouçut
+, "MOV SP, BP\n");
+
+889 
+	`Ârötf
+(
+ouçut
+, "POP BP\n");
+
+890 
+	`Ârötf
+(
+ouçut
+, "RET");
+
+891 
+	}
+}
+
+	@util.h
+
+1 #i‚de‡
+UTIL_H
+
+
+2 
+	#UTIL_H
+
+
+	)
+
+4 
+	~<°rög
+>
+
+5 
+	~"sy¡axTªe.h
+"
+
+7 
+	#ARRAY
+ 0
+
+	)
+
+8 
+	#VARIABLE
+ 1
+
+	)
+
+9 
+	#FUNCTION
+ 2
+
+	)
+
+11 
+îr‹
+ (c⁄° 
+°d
+::
+°rög
+ &
+s
+, 
+l
+, 
+c
+);
+
+12 
+SNode
+ *
+¥o˚ssFun˘i⁄Hódî
+(SNodê*
+d©©y≥
+, SNodê*
+fun˘i⁄ID
+, SNodê*
+¨gumíts
+, SNodê*
+de˛¨©i⁄s
+, SNodê*
+globÆSc›e
+);
+
+13 
+SNode
+ *
+v¨übÀAc˚ss
+(SNodê*
+v¨übÀID
+, SNodê*
+ödexEx¥
+, SNodê*
+Sc›e
+[2], );
+
+14 
+boﬁ
+ 
+¥o˚ssDe˛î©i⁄s
+(
+symbﬁNode
+ *
+TabÀ
+, 
+SNode
+ *
+$2
+);
+
+15 
+codeGí
+(
+SNode
+ *
+node
+, 
+FILE
+ *
+ouçut
+);
+
+16 
+gíî©eCode
+(
+SNode
+ *
+°¨t
+, 
+FILE
+ *
+ouçut
+);
+
+17 
+gëUßgeTy≥
+(
+symbﬁNode
+ *
+íåy
+);
+
+18 
+checkFun˘i⁄De˛¨ed
+(
+SNode
+ *
+¥ogøm
+);
+
+19 
+addLibøry
+(
+FILE
+ *
+ouçut
+);
+
+	@
+1
+.
+0
+11
+128
+compiler.l
+compiler.y
+lib.h
+symbolTable.cpp
+symbolTable.h
+syntaxTree.cpp
+syntaxTree.h
+typeTable.cpp
+typeTable.h
+util.cpp
+util.h
