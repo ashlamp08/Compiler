@@ -10,8 +10,7 @@
 
 typedef struct astnode
 {
-	int datatype;
-	int nodetype;
+	int datatype, nodetype;
 	
 	char name[20];
 	int int_value;		//for constants
