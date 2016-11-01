@@ -1,0 +1,62 @@
+<start, >Created
+<read, >Created
+<ID,a>Created
+<ID,b>Created
+<OP,=>Created
+<NUM,2>Created
+<OP,+>Created
+<NUM,5>Created
+<ID,c>Created
+<OP,=>Created
+<ID,a>Created
+<OP,*>Created
+<NUM,8>Created
+<OP,+>Created
+<ID,b>Created
+<if, >Created
+ <NUM,2>Created
+<OP,>>Created
+<NUM,1>Created
+ <then, >Created
+	<write, >Created
+<ID,c>Created
+<OP,+>Created
+<ID,a>Created
+<endif, >Created
+<then, >Destroyed
+<endif, >Destroyed
+<write, >Created
+<ID,a>Created
+<OP,*>Created
+<NUM,2>Created
+<end, >Created
+Program Complete
+<start, >Destroyed
+<end, >Destroyed
+<ID,a>Destroyed
+<NUM,2>Destroyed
+<OP,*>Destroyed
+<NUM,2>Destroyed
+<NUM,1>Destroyed
+<OP,>>Destroyed
+<ID,c>Destroyed
+<ID,a>Destroyed
+<OP,+>Destroyed
+<write, >Destroyed
+<ID,c>Destroyed
+<ID,a>Destroyed
+<NUM,8>Destroyed
+<OP,*>Destroyed
+<ID,b>Destroyed
+<OP,+>Destroyed
+<ID,b>Destroyed
+<NUM,2>Destroyed
+<NUM,5>Destroyed
+<OP,+>Destroyed
+<ID,a>Destroyed
+<read, >Destroyed
+<OP,=>Destroyed
+<OP,=>Destroyed
+<if, >Destroyed
+<write, >Destroyed
+Nodes Left = 0

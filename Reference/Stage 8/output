@@ -1,0 +1,36 @@
+Reading from STD Input
+<start>Created
+<decl>Created
+<int>Created
+<ID,a>>Created
+<ID,b>>Created
+<NUM,100>Created
+<int>Destroyed
+<NUM,100>Destroyed
+<ID,b>>Destroyed
+<ID,a>>Destroyed
+<int>Created
+<ID,c>>Created
+<int>Destroyed
+<ID,c>>Destroyed
+<enddecl>Created
+<start>Created
+<write>Created
+<ID,a>>Created
+<end>Created
+Program Complete
+<start>Destroyed
+<end>Destroyed
+Declarations:
+<&&&>
+<a,int>
+<b,int,100>
+<c,int>
+Code:
+<start>
+<write>
+ÀÄÄÄÄÄÄÄ<ID,<a,int>,int>
+<ID,<a,int>,int>Destroyed
+<write>Destroyed
+<start>Destroyed
+Nodes Left = 2

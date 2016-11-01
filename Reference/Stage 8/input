@@ -1,0 +1,22 @@
+decl
+	integer i,j,k;
+	boolean c;
+enddecl
+begin
+read(i);
+read(j);
+read(k);
+if(i>j) then
+	if(i>k) then
+		write(i);
+	else
+		write(k);
+	endif;
+else
+	if(j>k) then
+		write(j);
+	else
+		write(k);
+	endif;
+endif;
+end

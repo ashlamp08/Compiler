@@ -1,0 +1,23 @@
+typedef name1{
+	integer b;
+	integer a;
+}
+decl
+	integer i,main();
+	name1 A;
+enddecl
+integer main(){
+begin
+	i = initialize();
+	A = allocate();
+	A = allocate();
+	read(A.b);
+	read(A.a);
+	write(A.b);
+	write(A.a);
+	i = free(A);
+	write(A.b);
+	write(A.a);
+	return 0;
+end
+}

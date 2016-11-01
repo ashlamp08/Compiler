@@ -1,0 +1,29 @@
+decl
+	integer i,main(),a(integer x);
+	integer ab[12],abc;
+enddecl
+integer main(){
+begin
+	i=0;
+	while(i<12) do
+		read(ab[i]);
+		i = i + 1;
+	endwhile;
+	
+	i=0;
+	while(i<12) do
+		write(ab[12-i-1]);
+		i = i + 1;
+	endwhile;
+	
+	return 0;
+end
+}
+integer a(integer x){
+decl
+	integer X,Y;
+enddecl
+begin
+	return x;
+end
+}

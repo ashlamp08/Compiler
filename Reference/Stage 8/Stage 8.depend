@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1454171853 source:g:\work\silc\stage 8\compiler.l
+	<iostream>
+	"syntaxTree.h"
+	"compiler.hpp"
+
+1453576190 g:\work\silc\stage 8\syntaxtree.h
+	"symbolTable.h"
+	<string>
+
+1453882626 g:\work\silc\stage 8\symboltable.h
+	<string>
+	<vector>
+
+1454172596 source:g:\work\silc\stage 8\compiler.y
+	<iostream>
+	<cmath>
+	"syntaxTree.h"
+	<string>
+
+1454171572 source:g:\work\silc\stage 8\symboltable.cpp
+	"symbolTable.h"
+	<iostream>
+	"compiler.hpp"
+
+1453998409 source:g:\work\silc\stage 8\syntaxtree.cpp
+	<iostream>
+	<vector>
+	<stack>
+	<cmath>
+	"syntaxTree.h"
+	"compiler.hpp"
+
+1454226812 g:\work\silc\stage 8\compiler.hpp
+
+1454172596 source:g:\work\silc\stage 8\a_compiler.y
+	<iostream>
+	<cmath>
+	"syntaxTree.h"
+	<string>
+
+1454171853 source:g:\work\silc\stage 8\b_compiler.l
+	<iostream>
+	"syntaxTree.h"
+	"compiler.hpp"
+
