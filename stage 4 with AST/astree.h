@@ -10,15 +10,10 @@
 
 typedef struct astnode
 {
-	int datatype;
-	int nodetype;
-	
+	int datatype, nodetype, int_value;
 	char name[20];
-	int int_value;		//for constants
 	bool bool_value;
-
 	struct astnode *ptr1, *ptr2, *ptr3;
-
 	symbol *Gentry;
  
 } ast;

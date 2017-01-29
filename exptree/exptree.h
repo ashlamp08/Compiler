@@ -1,9 +1,7 @@
 typedef struct tnode{
-		int flag;
-		int val;
+		int flag, val;
             	char op;
-		struct tnode *right;
-		struct tnode *left;
+		struct tnode *right, *left;
 }node;
 
 #define YYSTYPE node *

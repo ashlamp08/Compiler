@@ -16,8 +16,7 @@ union st
 typedef struct ssymbol
 {
 	char name[30];	
-	int datatype;
-	int size;
+	int datatype, size;
 	union st store;
 
 } symbol;
